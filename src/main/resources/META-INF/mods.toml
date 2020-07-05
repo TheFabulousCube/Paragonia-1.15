@@ -15,13 +15,13 @@ loaderVersion="[31,)" #mandatory This is typically bumped every Minecraft versio
 modId="paragonia" #mandatory
 version="0.7.0-alpha" #mandatory ${file.jarVersion}
 displayName="Paragonia" #mandatory
-updateJSONURL="https://github.com/Corail31/tombstone_lite/raw/master/update.json" #optional
+updateJSONURL="https://raw.githubusercontent.com/TheFabulousCube/Paragonia-1.15/master/src/main/resources/update.json" #optional
 displayURL="https://github.com/TheFabulousCube/Paragonia-1.15" #optional
 logoFile="pack.png" 
 credits="All artwork and design by Elsweyr" 
 authors="The Fabulous Cube" 
 
-description="Mod pack designed to supplement Paragonia Texture pack"
+description="Mod pack designed to supplement Paragonia Texture pack Version ${file.jarVersion}"
  
 [[dependencies.paragonia]] #optional
     modId="forge" #mandatory
