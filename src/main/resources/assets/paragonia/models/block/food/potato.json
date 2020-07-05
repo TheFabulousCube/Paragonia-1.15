@@ -1,0 +1,50 @@
+{
+	"__comment": "~ Elsweyr",
+	"textures": {
+		"particle": "paragonia:blocks/foods/potato",
+		"texture": "paragonia:blocks/foods/potato"
+	},
+	"elements": [ 	 
+		{
+			"__comment": "Potato",
+			"from": [ 5.5, 0, 6.5 ],
+			"to": [ 10.5, 3, 9.5 ],
+			"faces": {
+				"down": { "uv": [ 6, 10, 16, 16 ], "texture": "#texture" },
+				"up": { "uv": [ 6, 10, 16, 16 ], "texture": "#texture" },
+				"north": { "uv": [ 6, 10, 16, 16 ], "texture": "#texture" },
+				"south": { "uv": [ 6, 10, 16, 16 ], "texture": "#texture" },
+				"west": { "uv": [ 10, 4, 16, 10 ], "texture": "#texture" },
+				"east": { "uv": [ 10, 4, 16, 10 ], "texture": "#texture" }
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation":  [ -6.75, 2, 1.75 ],
+			"rotation": [ 10, 0, 90 ]
+		},
+		"thirdperson_lefthand": {
+			"translation":  [ -6.5, 2, 1.75 ],
+			"rotation": [ 10, 0, 90 ]
+		},
+		"firstperson_righthand": {
+			"translation":  [ 0, 6.5, 0 ]
+		},
+		"firstperson_lefthand": {
+			"translation":  [ 0, 6.5, 0 ]
+		},
+		"gui": {
+			"rotation":  [ -9, 46, 46 ],
+			"translation":  [ -8, 11.5, 0 ],
+			"scale": [ 2.3, 2.3, 2.3 ]
+		},
+		"head": {
+			"translation":  [ 0, -30.71, 0 ],
+			"scale":  [ 1.5, 1.5, 1.5 ]
+		},
+		"ground": {
+			"translation":  [ 0, 4.7445, 0 ]
+		}
+	}
+}

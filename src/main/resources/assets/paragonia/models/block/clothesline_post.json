@@ -1,0 +1,63 @@
+{
+	"__comment": "~ Elsweyr",
+	"textures": {
+		"particle": "paragonia:blocks/decorations/clothesline_post",
+		"texture": "paragonia:blocks/decorations/clothesline_post"
+	},
+	"elements": [ 	 
+		{
+			"__comment": "Box1",
+			"from": [ 7, 0, 7 ],
+			"to": [ 10, 32, 10 ],
+			"faces": {
+				"down": { "uv": [ 14.5, 0, 16, 1.5 ], "texture": "#texture" },
+				"up": { "uv": [ 14.5, 0, 16, 1.5 ], "texture": "#texture" },
+				"north": { "uv": [ 1.5, 0, 3, 16 ], "texture": "#texture" },
+				"south": { "uv": [ 4.5, 0, 6, 16 ], "texture": "#texture" },
+				"west": { "uv": [ 3, 0, 4.5, 16 ], "texture": "#texture" },
+				"east": { "uv": [ 0, 0, 1.5, 16 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "Box2",
+			"from": [ 7.5, 20.5, 8.5 ],
+			"to": [ 9.5, 22.5, 10.5 ],
+			"rotation": { "origin": [ 7.5, 20.5, 8.5 ], "axis": "x", "angle": 45 },
+			"faces": {
+				"down": { "uv": [ 15, 15, 16, 16 ], "texture": "#texture" },
+				"up": { "uv": [ 15, 15, 16, 16 ], "texture": "#texture" },
+				"north": { "uv": [ 14, 15, 15, 16 ], "texture": "#texture" },
+				"south": { "uv": [ 14, 15, 15, 16 ], "texture": "#texture" },
+				"west": { "uv": [ 14, 15, 15, 16 ], "texture": "#texture" },
+				"east": { "uv": [ 14, 15, 15, 16 ], "texture": "#texture" }
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"scale":  [ 0.5, 0.5, 0.5 ]
+		},
+		"thirdperson_lefthand": {
+			"scale":  [ 0.5, 0.5, 0.5 ]
+		},
+		"firstperson_righthand": {
+			"translation":  [ 0, -13.38, 0 ]
+		},
+		"firstperson_lefthand": {
+			"translation":  [ 0, -13.38, 0 ]
+		},
+		"gui": {
+			"rotation":  [ 19, -40, 0 ],
+			"translation":  [ 0, -3.762, 0 ],
+			"scale":  [ 0.48, 0.48, 0.48 ]
+		},
+		"head": {
+			"translation":  [ 0, -29.45, 0 ],
+			"scale":  [ 1.7, 1.7, 1.7 ]
+		},
+		"ground": {
+			"translation":  [ 0, 1.6603, 0 ],
+			"scale":  [ 0.25, 0.25, 0.25 ]
+		}
+	}
+}

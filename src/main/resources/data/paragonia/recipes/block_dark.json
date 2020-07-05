@@ -1,0 +1,20 @@
+{
+	"group": "wide_block",
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"XDX",
+		"DXD"
+	],
+	"key": {
+		"X": {
+			"item": "minecraft:stone"
+		},
+		"D": {
+			"item": "minecraft:granite"
+		}
+	},
+	"result": {
+		"item": "paragonia:block_dark",
+		"count": 3
+	}
+}

@@ -1,0 +1,8 @@
+{
+	"__comment": "~ Elsweyr",
+	"parent": "paragonia:block/wideblock_right",
+	"textures": {
+		"right": "paragonia:blocks/decorations/block_dark",
+		"left": "paragonia:blocks/decorations/block_dark"
+	}
+}

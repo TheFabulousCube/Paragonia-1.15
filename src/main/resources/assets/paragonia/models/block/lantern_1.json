@@ -1,0 +1,108 @@
+{
+	"__comment": "~ Elsweyr",
+	"parent": "block/torch",
+	"ambientocclusion": false,
+	"textures": {
+		"texture": "paragonia:blocks/decorations/lantern_1",
+		"candle": "paragonia:blocks/decorations/candles",
+		"flame": "paragonia:blocks/decorations/flame"
+	},
+	"elements": [ 	 
+		{
+			"__comment": "Box4",
+			"from": [ 7, 0.0009999999, 7 ],
+			"to": [ 9, 4.001, 9 ],
+			"faces": {
+				"down": { "uv": [ 4, 0, 6, 2 ], "texture": "#candle" },
+				"up": { "uv": [ 2, 0, 4, 2 ], "texture": "#candle" },
+				"north": { "uv": [ 2, 2, 4, 6 ], "texture": "#candle" },
+				"south": { "uv": [ 6, 2, 8, 6 ], "texture": "#candle" },
+				"west": { "uv": [ 4, 2, 6, 6 ], "texture": "#candle" },
+				"east": { "uv": [ 0, 2, 2, 6 ], "texture": "#candle" }
+			}
+		},
+		{
+			"__comment": "Box1",
+			"from": [ 5, 0, 5 ],
+			"to": [ 11, 8, 11 ],
+			"faces": {
+				"down": { "uv": [ 0, 8, 6, 14 ], "texture": "#texture" },
+				"up": { "uv": [ 6, 0, 12, 6 ], "texture": "#texture" },
+				"north": { "uv": [ 0, 0, 6, 8 ], "texture": "#texture" },
+				"south": { "uv": [ 0, 0, 6, 8 ], "texture": "#texture" },
+				"west": { "uv": [ 0, 0, 6, 8 ], "texture": "#texture" },
+				"east": { "uv": [ 0, 0, 6, 8 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "Box2",
+			"from": [ 7, 7.5, 7 ],
+			"to": [ 9, 9.5, 9 ],
+			"faces": {
+				"down": { "uv": [ 14, 4, 16, 6 ], "texture": "#texture" },
+				"up": { "uv": [ 14, 0, 16, 2 ], "texture": "#texture" },
+				"north": { "uv": [ 14, 2, 16, 4 ], "texture": "#texture" },
+				"south": { "uv": [ 14, 2, 16, 4 ], "texture": "#texture" },
+				"west": { "uv": [ 14, 4, 16, 6 ], "texture": "#texture" },
+				"east": { "uv": [ 14, 4, 16, 6 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "PlaneZ3",
+			"from": [ 5.5, 9, 8 ],
+			"to": [ 10.5, 14, 8.01 ],
+            "shade": false,
+			"faces": {
+				"north": { "uv": [ 11, 11, 16, 16 ], "texture": "#texture" },
+				"south": { "uv": [ 11, 11, 16, 16 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "PlaneZ5",
+			"from": [ 7, 4, 8 ],
+			"to": [ 9, 6, 8 ],
+			"shade": false,
+			"faces": {
+				"north": { "uv": [ 0, 0, 16, 16 ], "texture": "#flame" },
+				"south": { "uv": [ 0, 0, 16, 16 ], "texture": "#flame" }
+			}
+		},
+		{
+			"__comment": "PlaneX6",
+			"from": [ 8, 4, 7 ],
+			"to": [ 8, 6, 9 ],
+            "shade": false,
+			"faces": {
+				"west": { "uv": [ 0, 0, 16, 16 ], "texture": "#flame" },
+				"east": { "uv": [ 0, 0, 16, 16 ], "texture": "#flame" }
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation":  [ 91, 0, 0 ],
+			"translation":  [ 0, -1.608, -3.043 ]
+		},
+		"thirdperson_lefthand": {
+			"rotation":  [ 91, 0, 0 ],
+			"translation":  [ 0, -1.608, -3.043 ]
+		},
+		"firstperson_righthand": {
+			"translation":  [ 1.3695, 6.1494, 0 ]
+		},
+		"firstperson_lefthand": {
+			"translation":  [ 1.3695, 6.1494, 0 ]
+		},
+		"gui": {
+			"rotation":  [ 15, -24, 0 ],
+			"translation":  [ 0, 1.201, 0 ]
+		},
+		"head": {
+			"translation":  [ 0, -30.46, 0 ],
+			"scale":  [ 1.65, 1.65, 1.65 ]
+		},
+		"ground": {
+			"translation":  [ 0, 5.3858, 0 ]
+		}
+	}
+}

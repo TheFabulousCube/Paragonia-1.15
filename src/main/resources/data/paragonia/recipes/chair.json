@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "paragonia_furniture",
+  "pattern": [
+    "  s",
+    "ppp",
+    "s s"
+  ],
+  "key": {
+    "s": {
+      "item": "minecraft:stick"
+    },
+    "p": [
+      {
+      "tag": "minecraft:planks"
+      }
+    ]
+  },
+  "result": {
+    "item": "paragonia:chair"
+  }
+}

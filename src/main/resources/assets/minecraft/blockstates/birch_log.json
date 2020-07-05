@@ -1,0 +1,22 @@
+{
+    "variants": {
+        "axis=y": [   
+            { "model": "block/birch_log_1", "weight": 25 },
+            { "model": "block/birch_log_2", "weight": 25 },
+            { "model": "block/birch_log_3", "weight": 25 },
+            { "model": "block/birch_log_4", "weight": 25 }
+            ],
+        "axis=z": [  
+            { "model": "block/birch_log_1", "weight": 25, "x": 90 },
+            { "model": "block/birch_log_2", "weight": 25, "x": 90 },
+            { "model": "block/birch_log_3", "weight": 25, "x": 90 },
+            { "model": "block/birch_log_4", "weight": 25, "x": 90 }
+            ],
+        "axis=x": [    
+            { "model": "block/birch_log_1", "weight": 25, "x": 90, "y": 90 },
+            { "model": "block/birch_log_2", "weight": 25, "x": 90, "y":90 },
+            { "model": "block/birch_log_3", "weight": 25, "x": 90, "y":90 },
+            { "model": "block/birch_log_4", "weight": 25, "x": 90, "y":90 }
+            ]
+    }
+}

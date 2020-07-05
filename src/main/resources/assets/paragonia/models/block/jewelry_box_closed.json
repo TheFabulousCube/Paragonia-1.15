@@ -1,0 +1,61 @@
+{
+	"__comment": "~ Elsweyr",
+	"textures": {
+		"particle": "paragonia:blocks/decorations/jewelry_box",
+		"texture": "paragonia:blocks/decorations/jewelry_box"
+	},
+	"elements": [ 	 
+		{
+			"__comment": "Box1",
+			"from": [ 6.0005, -0.0006, 6.4994 ],
+			"to": [ 10.0005, 1.9994, 10.4994 ],
+			"faces": {
+				"down": { "uv": [ 4, 4, 8, 8 ], "texture": "#texture" },
+				"up": { "uv": [ 0, 4, 4, 8 ], "texture": "#texture" },
+				"north": { "uv": [ 0, 8, 4, 10 ], "texture": "#texture" },
+				"south": { "uv": [ 4, 8, 8, 10 ], "texture": "#texture" },
+				"west": { "uv": [ 4, 8, 8, 10 ], "texture": "#texture" },
+				"east": { "uv": [ 4, 8, 8, 10 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "Box2",
+			"from": [ 6.0009, 2.0006, 6.4995 ],
+			"to": [ 10.0009, 4.0006, 10.4995 ],
+			"rotation": { "origin": [ 6, 2, 6.5 ], "axis": "x", "angle": 0 },
+			"faces": {
+				"down": { "uv": [ 4, 10, 8, 14 ], "texture": "#texture" },
+				"up": { "uv": [ 0, 10, 4, 14 ], "texture": "#texture" },
+				"north": { "uv": [ 0, 14, 4, 16 ], "texture": "#texture" },
+				"south": { "uv": [ 4, 14, 8, 16 ], "texture": "#texture" },
+				"west": { "uv": [ 4, 14, 8, 16 ], "texture": "#texture" },
+				"east": { "uv": [ 4, 14, 8, 16 ], "texture": "#texture" }
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation":  [ 0, 7.3967, 0 ]
+		},
+		"thirdperson_lefthand": {
+			"translation":  [ 0, 7.3967, 0 ]
+		},
+		"firstperson_righthand": {
+			"translation":  [ 0, 6.8641, 0 ]
+		},
+		"firstperson_lefthand": {
+			"translation":  [ 0, 6.8641, 0 ]
+		},
+		"gui": {
+			"rotation":  [ 34, 158, 0 ],
+			"translation":  [ 0, 4.1087, 0 ]
+		},
+		"head": {
+			"translation":  [ 0, -29.24, 0 ],
+			"scale":  [ 1.65, 1.65, 1.65 ]
+		},
+		"ground": {
+			"translation":  [ 0, 5.7554, 0 ]
+		}
+	}
+}

@@ -1,0 +1,72 @@
+{
+	"__comment": "~ Elsweyr",
+	"textures": {
+		"texture": "paragonia:blocks/foods/pumpkin_large",
+        "particle": "paragonia:blocks/foods/pumpkin_large"
+	},
+	"elements": [ 	 
+		{
+			"__comment": "Pumpkin",
+			"from": [ 2, 0, 2 ],
+			"to": [ 14, 9, 14 ],
+			"faces": {
+				"down": { "uv": [ 10, 6, 16, 12 ], "texture": "#texture" },
+				"up": { "uv": [ 10, 0, 16, 6 ], "texture": "#texture" },
+				"north": { "uv": [ 4, 0, 10, 4.5 ], "texture": "#texture" },
+				"south": { "uv": [ 4, 0, 10, 4.5 ], "texture": "#texture" },
+				"west": { "uv": [ 4, 0, 10, 4.5 ], "texture": "#texture" },
+				"east": { "uv": [ 4, 0, 10, 4.5 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "Stem 1",
+			"from": [ 7.5, 7.5, 7 ],
+			"to": [ 9.5, 11.5, 9 ],
+			"rotation": { "origin": [ 7.5, 7.5, 7 ], "axis": "z", "angle": 22.5 },
+			"faces": {
+				"down": { "uv": [ 1.5, 15, 2.5, 16 ], "texture": "#texture" },
+				"up": { "uv": [ 1.5, 15, 2.5, 16 ], "texture": "#texture" },
+				"north": { "uv": [ 0, 14, 1, 16 ], "texture": "#texture" },
+				"south": { "uv": [ 0, 14, 1, 16 ], "texture": "#texture" },
+				"west": { "uv": [ 0, 14, 1, 16 ], "texture": "#texture" },
+				"east": { "uv": [ 0, 14, 1, 16 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "Stem 2",
+			"from": [ 4.625, 10.625, 7.5 ],
+			"to": [ 7.625, 11.625, 8.5 ],
+			"rotation": { "origin": [ 7.625, 10.625, 7.5 ], "axis": "z", "angle": -22.5 },
+			"faces": {
+				"down": { "uv": [ 1.5, 16, 1, 14.5 ], "texture": "#texture", "rotation": 90 },
+				"up": { "uv": [ 1, 14.5, 1.5, 16 ], "texture": "#texture", "rotation": 270 },
+				"north": { "uv": [ 1.5, 16, 1, 14.5 ], "texture": "#texture", "rotation": 270 },
+				"south": { "uv": [ 1.5, 16, 1, 14.5 ], "texture": "#texture", "rotation": 90 },
+				"west": { "uv": [ 3, 16, 2.5, 15.5 ], "texture": "#texture", "rotation": 90 },
+				"east": { "uv": [ 2.5, 15.5, 3, 16 ], "texture": "#texture", "rotation": 270 }
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation":  [ 0, 2.5, 0 ],
+			"scale":  [ 0.5, 0.5, 0.5 ]
+		},
+		"thirdperson_lefthand": {
+			"translation":  [ 0, 2.5, 0 ],
+			"scale":  [ 0.5, 0.5, 0.5 ]
+		},
+		"gui": {
+			"rotation":  [ 18, -20, 0 ],
+			"translation":  [ 0, 2.5, 0 ]
+		},
+		"head": {
+			"translation":  [ 0, -31.39, 0 ],
+			"scale":  [ 1.5, 1.5, 1.5 ]
+		},
+		"ground": {
+			"translation":  [ 0, 4.0706, 0 ],
+			"scale":  [ 0.75, 0.75, 0.75 ]
+		}
+	}
+}

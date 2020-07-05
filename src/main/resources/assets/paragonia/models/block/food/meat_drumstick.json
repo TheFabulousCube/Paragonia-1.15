@@ -1,0 +1,85 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"particle": "paragonia:blocks/foods/meat_drumstick",
+		"texture": "paragonia:blocks/foods/meat_drumstick"
+	},
+	"elements": [
+		{
+			"name": "Meat",
+			"from": [8, 0, 6.5],
+			"to": [12, 3, 9.5],
+			"faces": {
+				"north": {"uv": [8, 6, 16, 12], "texture": "#texture"},
+				"east": {"uv": [2, 6, 8, 12], "texture": "#texture"},
+				"south": {"uv": [8, 6, 16, 12], "texture": "#texture"},
+				"west": {"uv": [2, 6, 8, 12], "texture": "#texture"},
+				"up": {"uv": [8, 0, 16, 6], "texture": "#texture"},
+				"down": {"uv": [8, 0, 16, 6], "texture": "#texture"}
+			}
+		},
+		{
+			"name": "Bone",
+			"from": [5, 1, 7.5],
+			"to": [8, 2, 8.5],
+			"faces": {
+				"north": {"uv": [16, 14, 10, 16], "texture": "#texture"},
+				"east": {"uv": [14, 14, 16, 16], "texture": "#texture"},
+				"south": {"uv": [10, 14, 16, 16], "texture": "#texture"},
+				"west": {"uv": [10, 14, 12, 16], "texture": "#texture"},
+				"up": {"uv": [10, 12, 16, 14], "texture": "#texture"},
+				"down": {"uv": [10, 12, 16, 14], "texture": "#texture"}
+			}
+		},
+		{
+			"name": "Nub",
+			"from": [4, 1, 7],
+			"to": [5, 2, 9],
+			"faces": {
+				"north": {"uv": [2, 12, 4, 14], "texture": "#texture"},
+				"east": {"uv": [0, 12, 2, 16], "rotation": 270, "texture": "#texture"},
+				"south": {"uv": [2, 14, 4, 16], "texture": "#texture"},
+				"west": {"uv": [0, 12, 2, 16], "rotation": 90, "texture": "#texture"},
+				"up": {"uv": [2, 12, 0, 16], "texture": "#texture"},
+				"down": {"uv": [0, 12, 2, 16], "texture": "#texture"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, 0, 90],
+			"translation": [-6.021, 1.9103, 1.2282]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [-180, 0, 90],
+			"translation": [-6.021, 1.9103, 1.2282]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 0, 95],
+			"translation": [-4, 1, 0]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 0, -65],
+			"translation": [6.682, 5.4701, 0]
+		},
+		"ground": {
+			"translation": [0, 5.3097, 0]
+		},
+		"gui": {
+			"rotation": [30, 24.5, 42],
+			"translation": [-6.25, 4, 0],
+			"scale": [1.6, 1.6, 1.6]
+		},
+		"head": {
+			"translation": [0, -29.08, 0],
+			"scale": [1.65, 1.65, 1.65]
+		}
+	},
+	"groups": [
+		{
+			"name": "VoxelShapes",
+			"origin": [8, 8, 8],
+			"children": [0, 1, 2]
+		}
+	]
+}

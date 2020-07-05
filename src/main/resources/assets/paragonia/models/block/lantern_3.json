@@ -1,0 +1,96 @@
+{
+	"__comment": "~ Elsweyr",
+	"textures": {
+		"particle": "paragonia:blocks/decorations/lantern_3",
+		"texture": "paragonia:blocks/decorations/lantern_3"
+	},
+	"elements": [ 	 
+		{
+			"__comment": "Paper",
+			"from": [ 3, 0, 3 ],
+			"to": [ 13, 10, 13 ],
+			"faces": {
+				"down": { "uv": [ 11, 0, 16, 5 ], "texture": "#texture" },
+				"up": { "uv": [ 11, 0, 16, 5 ], "texture": "#texture" },
+				"north": { "uv": [ 0, 5.5, 5, 10.5 ], "texture": "#texture" },
+				"south": { "uv": [ 0, 5.5, 5, 10.5 ], "texture": "#texture" },
+				"west": { "uv": [ 0, 5.5, 5, 10.5 ], "texture": "#texture" },
+				"east": { "uv": [ 0, 5.5, 5, 10.5 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "Top",
+			"from": [ 5.5, 10, 5.5 ],
+			"to": [ 10.5, 15, 10.5 ],
+			"faces": {
+				"down": { "uv": [ 3.75, 0.5, 6.25, 3 ], "texture": "#texture" },
+				"up": { "uv": [ 3.75, 3, 6.25, 5.5 ], "texture": "#texture" },
+				"north": { "uv": [ 1.25, 3, 3.75, 5.5 ], "texture": "#texture" },
+				"south": { "uv": [ 1.25, 3, 3.75, 5.5 ], "texture": "#texture" },
+				"west": { "uv": [ 1.25, 3, 3.75, 5.5 ], "texture": "#texture" },
+				"east": { "uv": [ 1.25, 3, 3.75, 5.5 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "Bottom",
+			"from": [ 5.5, -2, 5.5 ],
+			"to": [ 10.5, 0, 10.5 ],
+			"faces": {
+				"down": { "uv": [ 3.75, 10.5, 6.25, 13 ], "texture": "#texture" },
+				"up": { "uv": [ 3.75, 13, 6.25, 15.5 ], "texture": "#texture" },
+				"north": { "uv": [ 1.25, 10.5, 3.75, 11.5 ], "texture": "#texture" },
+				"south": { "uv": [ 1.25, 10.5, 3.75, 11.5 ], "texture": "#texture" },
+				"west": { "uv": [ 1.25, 10.5, 3.75, 11.5 ], "texture": "#texture" },
+				"east": { "uv": [ 1.25, 10.5, 3.75, 11.5 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "Handle",
+			"from": [ 6, 15, 8 ],
+			"to": [ 10, 21, 8.001 ],
+			"faces": {
+				"north": { "uv": [ 1.5, 0, 3.5, 3 ], "texture": "#texture" },
+				"south": { "uv": [ 1.5, 0, 3.5, 3 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "Ribbon",
+			"from": [ 7, -11, 8 ],
+			"to": [ 9, -2, 8.001 ],
+			"faces": {
+				"north": { "uv": [ 2, 11.5, 3, 16 ], "texture": "#texture" },
+				"south": { "uv": [ 3, 11.5, 2, 16 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "Ribbon",
+			"from": [ 8, -11, 7 ],
+			"to": [ 8.001, -2, 9 ],
+			"faces": {
+				"west": { "uv": [ 3, 11.5, 2, 16 ], "texture": "#texture" },
+				"east": { "uv": [ 2, 11.5, 3, 16 ], "texture": "#texture" }
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"scale":  [ 0.5, 0.5, 0.5 ]
+		},
+		"thirdperson_lefthand": {
+			"scale":  [ 0.5, 0.5, 0.5 ]
+		},
+		"gui": {
+			"rotation":  [ 19, -22, 0 ],
+			"translation":  [ 0, 1.3641, 0 ],
+			"scale":  [ 0.5, 0.5, 0.5 ]
+		},
+		"head": {
+			"translation":  [ 0, -12.49, 0 ],
+			"scale":  [ 1.65, 1.65, 1.65 ]
+		},
+		"ground": {
+			"translation":  [ 0, 8.7926, 0 ],
+			"scale":  [ 0.5, 0.5, 0.5 ]
+		}
+	}
+}

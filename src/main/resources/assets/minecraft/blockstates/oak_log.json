@@ -1,0 +1,16 @@
+{
+    "variants": {
+        "axis=y": [   
+            { "model": "block/oak_log_1", "weight": 10 },
+            { "model": "block/oak_log_2", "weight": 1 }
+            ],
+        "axis=z": [  
+            { "model": "block/oak_log_1", "weight": 10, "x": 90 },
+            { "model": "block/oak_log_2", "weight": 1, "x": 90 }
+            ],
+        "axis=x": [    
+            { "model": "block/oak_log_1", "weight": 10, "x": 90, "y": 90 },
+            { "model": "block/oak_log_2", "weight": 1, "x": 90, "y":90 }
+            ]
+    }
+}

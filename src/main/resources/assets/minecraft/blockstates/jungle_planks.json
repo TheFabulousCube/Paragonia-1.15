@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "": [
+			{ "model": "block/jungle_planks_1", "weight": 15 },
+            { "model": "block/jungle_planks_2", "weight": 2 }
+        ]
+    }
+}

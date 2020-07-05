@@ -1,0 +1,67 @@
+{
+	"__comment": "~ Elsweyr",
+	"textures": {
+		"particle": "paragonia:blocks/decorations/hammer",
+		"texture": "paragonia:blocks/decorations/hammer"
+	},
+	"elements": [ 	 
+		{
+			"__comment": "Handle",
+			"from": [ 7.5, -1.5, 7.5 ],
+			"to": [ 8.5, 10.5, 8.5 ],
+			"faces": {
+				"down": { "uv": [ 15.5, 11, 16, 11.5 ], "texture": "#texture" },
+				"up": { "uv": [ 15.5, 11.5, 16, 12 ], "texture": "#texture" },
+				"north": { "uv": [ 15, 0, 15.5, 6 ], "texture": "#texture" },
+				"south": { "uv": [ 15, 0, 15.5, 6 ], "texture": "#texture" },
+				"west": { "uv": [ 15, 0, 15.5, 6 ], "texture": "#texture" },
+				"east": { "uv": [ 15, 0, 15.5, 6 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "Head",
+			"from": [ 5, 7, 6.5 ],
+			"to": [ 11, 10, 9.5 ],
+			"faces": {
+				"down": { "uv": [ 11.5, 14.5, 14.5, 16 ], "texture": "#texture" },
+				"up": { "uv": [ 11.5, 14.5, 14.5, 16 ], "texture": "#texture" },
+				"north": { "uv": [ 11.5, 14.5, 14.5, 16 ], "texture": "#texture" },
+				"south": { "uv": [ 11.5, 14.5, 14.5, 16 ], "texture": "#texture" },
+				"west": { "uv": [ 14.5, 14.5, 16, 16 ], "texture": "#texture" },
+				"east": { "uv": [ 14.5, 14.5, 16, 16 ], "texture": "#texture" }
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation":  [ 0, 90, 0 ],
+			"translation":  [ 0, 3.7797, 1.5815 ]
+		},
+		"thirdperson_lefthand": {
+			"rotation":  [ 0, 90, 0 ],
+			"translation":  [ 0, 3.7797, 1.5815 ]
+		},
+		"firstperson_righthand": {
+			"rotation":  [ 0, 90, 0 ],
+			"translation":  [ 0, 4.595, 0 ]
+		},
+		"firstperson_lefthand": {
+			"rotation":  [ 0, 90, 0 ],
+			"translation":  [ 0, 4.595, 0 ]
+		},
+		"gui": {
+			"rotation":  [ 18, 33, 18 ],
+			"translation":  [ -0.565, 1.3857, 0 ],
+			"scale":  [ 0.5, 0.5, 0.5 ]
+		},
+		"head": {
+			"rotation":  [ 27, 0, 180 ],
+			"translation":  [ 0, -38.47, -4.916 ],
+			"scale":  [ 1.65, 1.65, 1.65 ]
+		},
+		"ground": {
+			"translation":  [ 0, 3.3885, 0 ],
+			"scale":  [ 0.5, 0.5, 0.5 ]
+		}
+	}
+}

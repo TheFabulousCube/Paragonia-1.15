@@ -1,0 +1,7 @@
+{
+    "parent": "paragonia:block/wideblock",
+    "textures": {
+        "texture": "paragonia:blocks/decorations/block_light",
+        "particle": "paragonia:blocks/decorations/block_light"
+    }
+}

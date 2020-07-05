@@ -1,0 +1,60 @@
+{
+	"__comment": "~ Elsweyr",
+	"textures": {
+		"particle": "paragonia:blocks/decorations/knives",
+		"texture": "paragonia:blocks/decorations/knives"
+	},
+	"elements": [ 	 
+		{
+			"__comment": "Handle",
+			"from": [ 7.5, 6.5, 7.5 ],
+			"to": [ 8.5, 11.5, 8.5 ],
+			"faces": {
+				"down": { "uv": [ 14, 14, 16, 16 ], "texture": "#texture" },
+				"up": { "uv": [ 14, 6, 16, 8 ], "texture": "#texture" },
+				"north": { "uv": [ 14, 6, 16, 16 ], "texture": "#texture" },
+				"south": { "uv": [ 14, 6, 16, 16 ], "texture": "#texture" },
+				"west": { "uv": [ 14, 6, 16, 16 ], "texture": "#texture" },
+				"east": { "uv": [ 14, 6, 16, 16 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "PlaneZ2",
+			"from": [ 7.5, 0, 8 ],
+			"to": [ 10.5, 7, 8.001 ],
+			"faces": {
+				"north": { "uv": [ 10, 2, 4, 16 ], "texture": "#texture" },
+				"south": { "uv": [ 4, 2, 10, 16 ], "texture": "#texture" }
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation":  [ 180, -90, 0 ],
+			"translation":  [ 0, 0, 1.3478 ]
+		},
+		"thirdperson_lefthand": {
+			"rotation":  [ 180, 90, 0 ],
+			"translation":  [ 0, 0, 1.3478 ]
+		},
+		"firstperson_righthand": {
+			"rotation":  [ 180, -107, 0 ],
+			"translation":  [ 1.8288, 0, 0 ]
+		},
+		"firstperson_lefthand": {
+			"rotation":  [ 180, -107, 0 ],
+			"translation":  [ 1.8288, 0, 0 ]
+		},
+		"gui": {
+			"rotation":  [ 16, -14, 0 ],
+			"translation":  [ 0, 1.4211, 0 ]
+		},
+		"head": {
+			"translation":  [ 0, -28.46, 0 ],
+			"scale":  [ 1.65, 1.65, 1.65 ]
+		},
+		"ground": {
+			"translation":  [ 0, 4.913, 0 ]
+		}
+	}
+}

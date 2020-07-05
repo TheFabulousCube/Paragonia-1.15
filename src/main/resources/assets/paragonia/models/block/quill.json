@@ -1,0 +1,43 @@
+{
+	"__comment": "~ Elsweyr",
+	"textures": {
+		"texture": "paragonia:blocks/decorations/quill",
+		"particle": "paragonia:blocks/decorations/quill"
+	},
+	"elements": [ 	 
+		{
+			"__comment": "quill",
+			"from": [ 5.5, 0, 8 ],
+			"to": [ 10.5, 10, 8.001 ],
+			"faces": {
+				"north": { "uv": [ 11, 6, 16, 16 ], "texture": "#texture" },
+				"south": { "uv": [ 16, 6, 11, 16 ], "texture": "#texture" }
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation":  [ 70, 0, 0 ],
+			"translation":  [ -1.448, 1.6766, 4.6521 ]
+		},
+		"thirdperson_lefthand": {
+			"rotation":  [ 70, 0, 0 ],
+			"translation":  [ -1.448, 1.6766, 4.6521 ]
+		},
+		"firstperson_righthand": {
+			"rotation":  [ 0, -61, 0 ],
+			"translation":  [ 1.9293, 5.375, 0 ]
+		},
+		"firstperson_lefthand": {
+			"rotation":  [ 0, -61, 0 ],
+			"translation":  [ 1.9293, 5.375, 0 ]
+		},
+		"gui": {
+			"translation":  [ 0, 2.6249, 0 ]
+		},
+		"head": {
+			"translation":  [ 0, -32.87, 0 ],
+			"scale":  [ 1.5, 1.5, 1.5 ]
+		}
+	}
+}

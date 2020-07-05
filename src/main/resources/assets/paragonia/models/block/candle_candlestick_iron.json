@@ -1,0 +1,108 @@
+{
+	"__comment": "~ Elsweyr",
+	"textures": {
+		"texture": "paragonia:blocks/decorations/candles",
+		"flame": "paragonia:blocks/decorations/flame",
+		"candelabra": "paragonia:blocks/decorations/candle_candelabra_iron",
+		"particle": "paragonia:blocks/decorations/candles"
+	},
+	"elements": [ 	 
+		{
+			"__comment": "Candle",
+			"from": [ 7, 11, 7 ],
+			"to": [ 9, 16, 9 ],
+			"faces": {
+				"down": { "uv": [ 12, 0, 14, 2 ], "texture": "#texture" },
+				"up": { "uv": [ 10, 0, 12, 2 ], "texture": "#texture" },
+				"north": { "uv": [ 10, 2, 12, 7 ], "texture": "#texture" },
+				"south": { "uv": [ 14, 2, 16, 7 ], "texture": "#texture" },
+				"west": { "uv": [ 12, 2, 14, 7 ], "texture": "#texture" },
+				"east": { "uv": [ 8, 2, 10, 7 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "Flame 1",
+			"from": [ 7, 16, 8 ],
+			"to": [ 9, 18, 8.001 ],
+			"faces": {
+				"north": { "uv": [ 0, 0, 16, 16 ], "texture": "#flame" },
+				"south": { "uv": [ 0, 0, 16, 16 ], "texture": "#flame" }
+			}
+		},
+		{
+			"__comment": "Flame 2",
+			"from": [ 8, 16, 7 ],
+			"to": [ 8.001, 18, 9 ],
+			"faces": {
+				"west": { "uv": [ 0, 0, 16, 16 ], "texture": "#flame" },
+				"east": { "uv": [ 0, 0, 16, 16 ], "texture": "#flame" }
+			}
+		},
+		{
+			"__comment": "Box7",
+			"from": [ 7, 1, 7 ],
+			"to": [ 9, 10, 9 ],
+			"faces": {
+				"down": { "uv": [ 0, 5, 2, 7 ], "texture": "#candelabra" },
+				"up": { "uv": [ 0, 5, 2, 7 ], "texture": "#candelabra" },
+				"north": { "uv": [ 0, 7, 2, 16 ], "texture": "#candelabra" },
+				"south": { "uv": [ 0, 7, 2, 16 ], "texture": "#candelabra" },
+				"west": { "uv": [ 0, 7, 2, 16 ], "texture": "#candelabra" },
+				"east": { "uv": [ 0, 7, 2, 16 ], "texture": "#candelabra" }
+			}
+		},
+		{
+			"__comment": "Box8",
+			"from": [ 6, 10, 6 ],
+			"to": [ 10, 11, 10 ],
+			"faces": {
+				"down": { "uv": [ 12, 0, 16, 4 ], "texture": "#candelabra" },
+				"up": { "uv": [ 12, 0, 16, 4 ], "texture": "#candelabra" },
+				"north": { "uv": [ 12, 4, 16, 5 ], "texture": "#candelabra" },
+				"south": { "uv": [ 12, 4, 16, 5 ], "texture": "#candelabra" },
+				"west": { "uv": [ 12, 4, 16, 5 ], "texture": "#candelabra" },
+				"east": { "uv": [ 12, 4, 16, 5 ], "texture": "#candelabra" }
+			}
+		},
+		{
+			"__comment": "Box9",
+			"from": [ 5, 0, 5 ],
+			"to": [ 11, 1, 11 ],
+			"faces": {
+				"down": { "uv": [ 10, 9, 16, 15 ], "texture": "#candelabra" },
+				"up": { "uv": [ 10, 9, 16, 15 ], "texture": "#candelabra" },
+				"north": { "uv": [ 10, 15, 16, 16 ], "texture": "#candelabra" },
+				"south": { "uv": [ 10, 15, 16, 16 ], "texture": "#candelabra" },
+				"west": { "uv": [ 10, 15, 16, 16 ], "texture": "#candelabra" },
+				"east": { "uv": [ 10, 15, 16, 16 ], "texture": "#candelabra" }
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation":  [ 0, 2.0489, 1.2064 ]
+		},
+		"thirdperson_lefthand": {
+			"translation":  [ 0, 2.0489, 1.2064 ]
+		},
+		"firstperson_righthand": {
+			"translation":  [ 1.4429, 0.5461, 0 ]
+		},
+		"firstperson_lefthand": {
+			"translation":  [ 1.4429, 0.5461, 0 ]
+		},
+		"gui": {
+			"rotation":  [ 20, 149, 0 ],
+			"translation":  [ 0, -0.209, 0 ],
+			"scale":  [ 0.75, 0.75, 0.75 ]
+		},
+		"head": {
+			"translation":  [ 0, -30.67, 0 ],
+			"scale":  [ 1.65, 1.65, 1.65 ]
+		},
+		"ground": {
+			"translation":  [ 0, 2.6358, 0 ],
+			"scale":  [ 0.5, 0.5, 0.5 ]
+		}
+	}
+}

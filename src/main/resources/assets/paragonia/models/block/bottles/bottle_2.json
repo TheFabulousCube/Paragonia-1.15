@@ -1,0 +1,73 @@
+{
+	"__comment": "~ Elsweyr",
+	"textures": {
+		"particle": "paragonia:blocks/decorations/bottle_2",
+		"texture": "paragonia:blocks/decorations/bottle_2"
+	},
+	"elements": [
+		{
+			"__comment": "Box1",
+			"from": [ 6.5, 0, 7 ],
+			"to": [ 9.5, 3, 10 ],
+			"faces": {
+				"down": { "uv": [ 6.5, 0, 9.5, 3 ], "texture": "#texture" },
+				"up": { "uv": [ 3, 0, 6, 3 ], "texture": "#texture" },
+				"north": { "uv": [ 9, 3, 12, 6 ], "texture": "#texture" },
+				"south": { "uv": [ 3, 3, 6, 6 ], "texture": "#texture" },
+				"west": { "uv": [ 0, 3, 3, 6 ], "texture": "#texture" },
+				"east": { "uv": [ 6, 3, 9, 6 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "Box2",
+			"from": [ 7.5, 3, 8 ],
+			"to": [ 8.5, 4, 9 ],
+			"faces": {
+				"down": { "uv": [ 1, 2, 2, 3 ], "texture": "#texture" },
+				"up": { "uv": [ 1, 2, 2, 3 ], "texture": "#texture" },
+				"north": { "uv": [ 1, 2, 2, 3 ], "texture": "#texture" },
+				"south": { "uv": [ 1, 2, 2, 3 ], "texture": "#texture" },
+				"west": { "uv": [ 1, 2, 2, 3 ], "texture": "#texture" },
+				"east": { "uv": [ 1, 2, 2, 3 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "Box3",
+			"from": [ 7.75, 3.5, 8.25 ],
+			"to": [ 8.25, 4.5, 8.75 ],
+			"faces": {
+				"down": { "uv": [ 15.5, 15.5, 16, 16 ], "texture": "#texture" },
+				"up": { "uv": [ 15.5, 15, 16, 15.5 ], "texture": "#texture" },
+				"north": { "uv": [ 15.5, 15, 16, 16 ], "texture": "#texture" },
+				"south": { "uv": [ 15.5, 15, 16, 16 ], "texture": "#texture" },
+				"west": { "uv": [ 15.5, 15, 16, 16 ], "texture": "#texture" },
+				"east": { "uv": [ 15.5, 15, 16, 16 ], "texture": "#texture" }
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation":  [ 0, 7.6087, 0 ]
+		},
+		"thirdperson_lefthand": {
+			"translation":  [ 0, 7.6087, 0 ]
+		},
+		"firstperson_righthand": {
+			"translation":  [ 0, 7.4239, 0 ]
+		},
+		"firstperson_lefthand": {
+			"translation":  [ 0, 7.4239, 0 ]
+		},
+		"gui": {
+			"rotation":  [ 16, -18, 0 ],
+			"translation":  [ 0, 5.5217, 0 ]
+		},
+		"head": {
+			"translation":  [ 0, -31, 0 ],
+			"scale":  [ 1.75, 1.75, 1.75 ]
+		},
+		"ground": {
+			"translation":  [ 0, 5.5869, 0 ]
+		}
+	}
+}

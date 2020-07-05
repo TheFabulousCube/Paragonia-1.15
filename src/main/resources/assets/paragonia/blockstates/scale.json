@@ -1,0 +1,43 @@
+{
+	"variants": {
+		"facing=south,level=down,state=left": { "model": "paragonia:block/scale_left","y":180,"x":90 },
+		"facing=west,level=down,state=left" : { "model": "paragonia:block/scale_left","y":270,"x":90 },
+		"facing=north,level=down,state=left": { "model": "paragonia:block/scale_left","y":0,"x":90 },
+		"facing=east,level=down,state=left" : { "model": "paragonia:block/scale_left","y":90,"x":90 },
+		"facing=south,level=even,state=left": { "model": "paragonia:block/scale_left","y":180 },
+		"facing=west,level=even,state=left" : { "model": "paragonia:block/scale_left","y":270 },
+		"facing=north,level=even,state=left": { "model": "paragonia:block/scale_left","y":0 },
+		"facing=east,level=even,state=left" : { "model": "paragonia:block/scale_left","y":90 },
+		"facing=south,level=up,state=left": { "model": "paragonia:block/scale_left","y":180,"x":270 },
+		"facing=west,level=up,state=left" : { "model": "paragonia:block/scale_left","y":270,"x":270 },
+		"facing=north,level=up,state=left": { "model": "paragonia:block/scale_left","y":0,"x":270 },
+		"facing=east,level=up,state=left" : { "model": "paragonia:block/scale_left","y":90,"x":270 },
+		
+		"facing=south,level=down,state=middle": { "model": "paragonia:block/scale","y":180,"x":90 },
+		"facing=west,level=down,state=middle" : { "model": "paragonia:block/scale","y":270,"x":90 },
+		"facing=north,level=down,state=middle": { "model": "paragonia:block/scale","y":0,"x":90 },
+		"facing=east,level=down,state=middle" : { "model": "paragonia:block/scale","y":90,"x":90 },
+		"facing=south,level=even,state=middle": { "model": "paragonia:block/scale","y":180 },
+		"facing=west,level=even,state=middle" : { "model": "paragonia:block/scale","y":270 },
+		"facing=north,level=even,state=middle": { "model": "paragonia:block/scale","y":0 },
+		"facing=east,level=even,state=middle" : { "model": "paragonia:block/scale","y":90 },
+		"facing=south,level=up,state=middle": { "model": "paragonia:block/scale","y":180,"x":270 },
+		"facing=west,level=up,state=middle" : { "model": "paragonia:block/scale","y":270,"x":270 },
+		"facing=north,level=up,state=middle": { "model": "paragonia:block/scale","y":0,"x":270 },
+		"facing=east,level=up,state=middle" : { "model": "paragonia:block/scale","y":90,"x":270 },
+		
+		"facing=south,level=down,state=right": { "model": "paragonia:block/scale_right","y":180,"x":90 },
+		"facing=west,level=down,state=right" : { "model": "paragonia:block/scale_right","y":270,"x":90 },
+		"facing=north,level=down,state=right": { "model": "paragonia:block/scale_right","y":0,"x":90 },
+		"facing=east,level=down,state=right" : { "model": "paragonia:block/scale_right","y":90,"x":90 },
+		"facing=south,level=even,state=right": { "model": "paragonia:block/scale_right","y":180 },
+		"facing=west,level=even,state=right" : { "model": "paragonia:block/scale_right","y":270 },
+		"facing=north,level=even,state=right": { "model": "paragonia:block/scale_right","y":0 },
+		"facing=east,level=even,state=right" : { "model": "paragonia:block/scale_right","y":90 },
+		"facing=south,level=up,state=right": { "model": "paragonia:block/scale_right","y":180,"x":270 },
+		"facing=west,level=up,state=right" : { "model": "paragonia:block/scale_right","y":270,"x":270 },
+		"facing=north,level=up,state=right": { "model": "paragonia:block/scale_right","y":0,"x":270 },
+		"facing=east,level=up,state=right" : { "model": "paragonia:block/scale_right","y":90,"x":270 }		
+	},
+	"inventory": { "model": "paragonia:block/scale" }
+}

@@ -1,0 +1,48 @@
+{
+    "parent": "block/cube",
+    "ambientocclusion": true,
+    "__comment": "~ Elsweyr",
+    "textures": {
+        "particle": "paragonia:blocks/decorations/block_coin",
+        "texture": "paragonia:blocks/decorations/block_coin"
+    },
+    "elements": [
+        {
+            "__comment": "Box1",
+            "from": [ 7, 0, 7.5 ],
+            "to": [ 9, 0.5, 9.5 ],
+            "faces": {
+                "down": { "uv": [ 0, 0, 12, 12 ], "texture": "#texture", "cullface": "down" },
+                "up": { "uv": [ 0, 0, 12, 12 ], "texture": "#texture" },
+                "north": { "uv": [ 0, 14, 12, 16 ], "texture": "#texture" },
+                "south": { "uv": [ 0, 14, 12, 16 ], "texture": "#texture" },
+                "west": { "uv": [ 0, 14, 12, 16 ], "texture": "#texture" },
+                "east": { "uv": [ 0, 14, 12, 16 ], "texture": "#texture" }
+            }
+        }
+    ],
+        "display": {
+        "thirdperson_righthand": {
+            "translation":  [ 0, 7.8016, -0.714 ]
+        },
+        "thirdperson_lefthand": {
+            "translation":  [ 0, 7.8016, -0.714 ]
+        },
+        "firstperson_righthand": {
+            "translation":  [ 0, 9, 0 ],
+            "scale":  [ 2, 2, 2 ]
+        },
+        "firstperson_lefthand": {
+            "translation":  [ 0, 9, 0 ],
+            "scale":  [ 2, 2, 2 ]
+        },
+        "gui": {
+            "rotation":  [ 40, -24, 0 ],
+            "translation":  [ 0.3532, 12.241, 0 ],
+            "scale":  [ 2, 2, 2 ]
+        },
+        "ground": {
+            "translation":  [ 0, 5.1, 0 ]
+        }
+    }
+}

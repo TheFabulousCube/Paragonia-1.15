@@ -1,0 +1,1 @@
+{	"type": "minecraft:block",	"pools": [		{			"rolls": 1,			"entries": [				{					"type": "minecraft:item",					"name": "paragonia:jewelry_box_closed"				}			],			"conditions": [				{					"condition": "minecraft:survives_explosion"				}			]		}	]}

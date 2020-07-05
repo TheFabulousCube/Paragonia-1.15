@@ -1,0 +1,54 @@
+{
+	"__comment": "~ Elsweyr",
+	"textures": {
+		"particle": "paragonia:blocks/decorations/mat_reeds",
+		"texture": "paragonia:blocks/decorations/mat_reeds"
+	},
+	"elements": [ 	 
+		{
+			"__comment": "Pillow",
+			"from": [ 0, 0, 6 ],
+			"to": [ 16, 4, 10 ],
+			"rotation": { "origin": [ 0, 0, 6 ], "axis": "x", "angle": 0 },
+			"faces": {
+				"down": { "uv": [ 0, 12, 8, 14 ], "texture": "#texture" },
+				"up": { "uv": [ 0, 12, 8, 14 ], "texture": "#texture" },
+				"north": { "uv": [ 0, 12, 8, 14 ], "texture": "#texture" },
+				"south": { "uv": [ 0, 12, 8, 14 ], "texture": "#texture" },
+				"west": { "uv": [ 0, 9.999999, 2, 12 ], "texture": "#texture" },
+				"east": { "uv": [ 0, 9.999999, 2, 12 ], "texture": "#texture" }
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation":  [ 0, 4.2309, 0 ],
+			"scale":  [ 0.5, 0.5, 0.5 ]
+		},
+		"thirdperson_lefthand": {
+			"translation":  [ 0, 4.2309, 0 ],
+			"scale":  [ 0.5, 0.5, 0.5 ]
+		},
+		"firstperson_righthand": {
+			"translation":  [ 0, 5.3179, 0 ],
+			"scale":  [ 0.5, 0.5, 0.5 ]
+		},
+		"firstperson_lefthand": {
+			"translation":  [ 0, 5.3179, 0 ],
+			"scale":  [ 0.5, 0.5, 0.5 ]
+		},
+		"gui": {
+			"rotation":  [ 36, 154, 0 ],
+			"translation":  [ 0, 2.0869, 0 ],
+			"scale":  [ 0.5, 0.5, 0.5 ]
+		},
+		"head": {
+			"translation":  [ 0, -29.1, 0 ],
+			"scale":  [ 1.65, 1.65, 1.65 ]
+		},
+		"ground": {
+			"translation":  [ 0, 3.6358, 0 ],
+			"scale":  [ 0.5, 0.5, 0.5 ]
+		}
+	}
+}

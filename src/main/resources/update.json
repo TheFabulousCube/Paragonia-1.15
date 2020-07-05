@@ -1,0 +1,16 @@
+{
+  "homepage": "http://paragonia.tadaatiedye.com",
+  "promos": {
+    "1.15.2-latest": "11.14.3.1543",
+    "1.15.2-recommended": "0.7.0-alpha",
+	"1.12.2-latest": "0.87.0",
+	"1.12.2-recommended": "0.87.0"
+  },
+  "1.15.2": {
+    "11.14.3.1543": "Not really out yet.  this is to test the updater",
+    "0.7.0-alpha": "Mobs: Ghost & Wood Sprite, they don't do much though."
+  },
+  "1.12.2": {
+  	"0.87.0": "Last & final version"
+  }
+}

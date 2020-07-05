@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "paragonia_journal",
+  "pattern": [
+    "s"
+  ],
+  "key": {
+    "s": [
+      {
+        "item": "minecraft:written_book",
+        "data": 32767
+      }
+    ]
+  },
+  "result": {
+    "item": "paragonia:journal"
+  }
+}

@@ -1,0 +1,43 @@
+{
+	"__comment": "~ Elsweyr",
+	"textures": {
+		"particle": "paragonia:blocks/decorations/starfish_red",
+		"texture": "paragonia:blocks/decorations/starfish_red"
+	},
+	"elements": [ 	 
+		{
+			"__comment": "PlaneY1",
+			"from": [ 3, 0, 3 ],
+			"to": [ 14, 0.001, 14 ],
+			"faces": {
+				"down": { "uv": [ 16, 0, 0, 16 ], "texture": "#texture" },
+				"up": { "uv": [ 16, 16, 0, 0 ], "texture": "#texture" }
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation":  [ 0, 8.4565, 0 ]
+		},
+		"thirdperson_lefthand": {
+			"translation":  [ 0, 8.4565, 0 ]
+		},
+		"firstperson_righthand": {
+			"translation":  [ 0, 9.3478, 0 ]
+		},
+		"firstperson_lefthand": {
+			"translation":  [ 0, 9.3478, 0 ]
+		},
+		"gui": {
+			"rotation":  [ 47, 157, 0 ],
+			"translation":  [ 0, 4.576, 0 ]
+		},
+		"head": {
+			"translation":  [ 0, -28.74, 0 ],
+			"scale":  [ 1.65, 1.65, 1.65 ]
+		},
+		"ground": {
+			"translation":  [ 0, 6.4456, 0 ]
+		}
+	}
+}

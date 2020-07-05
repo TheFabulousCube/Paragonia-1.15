@@ -1,0 +1,66 @@
+{
+	"__comment": "~ Elsweyr",
+	"textures": {
+		"texture": "paragonia:blocks/decorations/charm_bones",
+		"particle": "paragonia:blocks/decorations/charm_bones"
+	},
+	"elements": [ 	 
+		{
+			"__comment": "Rope",
+			"from": [ 7.5, 7, 8 ],
+			"to": [ 8.5, 23, 8.001 ],
+			"faces": {
+				"north": { "uv": [ 15, 0, 16, 16 ], "texture": "#texture" },
+				"south": { "uv": [ 15, 0, 16, 16 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "Hand Top",
+			"from": [ 5.5, 5, 8 ],
+			"to": [ 10.5, 7, 8.001 ],
+			"faces": {
+				"north": { "uv": [ 10, 0, 15, 2.5 ], "texture": "#texture" },
+				"south": { "uv": [ 15, 0, 10, 2.5 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "Hand Bottom",
+			"from": [ 5.5, 1.3551, 9.503099 ],
+			"to": [ 10.5, 5.3551, 9.5041 ],
+			"rotation": { "origin": [ 5.5, 1.375, 9.625 ], "axis": "x", "angle": -22.5 },
+			"faces": {
+				"north": { "uv": [ 10, 3, 15, 7 ], "texture": "#texture" },
+				"south": { "uv": [ 15, 3, 10, 7 ], "texture": "#texture" }
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation":  [ 0, 2.2311, 1.0298 ],
+			"scale":  [ 0.5, 0.5, 0.5 ]
+		},
+		"thirdperson_lefthand": {
+			"translation":  [ 0, 2.2311, 1.0298 ],
+			"scale":  [ 0.5, 0.5, 0.5 ]
+		},
+		"firstperson_righthand": {
+			"translation":  [ 2.2554, 3.2961, 0 ]
+		},
+		"firstperson_lefthand": {
+			"translation":  [ 2.2554, 3.2961, 0 ]
+		},
+		"gui": {
+			"rotation":  [ -10, -32, 0 ],
+			"translation":  [ 0, -1.918, 0 ],
+			"scale":  [ 0.5, 0.5, 0.5 ]
+		},
+		"head": {
+			"translation":  [ 0, -32.88, 0 ],
+			"scale":  [ 1.5, 1.5, 1.5 ]
+		},
+		"ground": {
+			"translation":  [ 0, 2.9619, 0 ],
+			"scale":  [ 0.5, 0.5, 0.5 ]
+		}
+	}
+}

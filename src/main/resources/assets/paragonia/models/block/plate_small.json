@@ -1,0 +1,45 @@
+{
+	"__comment": "~ Elsweyr",
+	"textures": {
+		"particle": "paragonia:blocks/decorations/plate_small",
+		"texture": "paragonia:blocks/decorations/plate_small"
+	},
+	"elements": [ 	 
+		{
+			"__comment": "PlaneY1",
+			"from": [ 4, 0, 4 ],
+			"to": [ 12, 0.001, 12 ],
+			"faces": {
+				"down": { "uv": [ 4, 4, 12, 12 ], "texture": "#texture" },
+				"up": { "uv": [ 4, 4, 12, 12 ], "texture": "#texture" }
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation":  [ 0, 8.2527, 0 ]
+		},
+		"thirdperson_lefthand": {
+			"translation":  [ 0, 8.2527, 0 ]
+		},
+		"firstperson_righthand": {
+			"translation":  [ 0, 8.8641, 0 ]
+		},
+		"firstperson_lefthand": {
+			"translation":  [ 0, 8.8641, 0 ]
+		},
+		"gui": {
+			"rotation":  [ 77, 0, -36 ],
+			"translation":  [ 4.6059, 1.7091, 1.623 ]
+		},
+		"head": {
+			"rotation":  [ 0, 180, 0 ],
+			"translation":  [ 0, -29.31, 0 ],
+			"scale":  [ 1.75, 1.75, 1.75 ]
+		},
+		"ground": {
+			"translation":  [ 0, 3.1602, 0 ],
+			"scale":  [ 0.5, 0.5, 0.5 ]
+		}
+	}
+}

@@ -1,0 +1,1 @@
+{	"type": "minecraft:block",	"pools": [		{			"rolls": 1,			"entries": [				{					"type": "minecraft:item",					"name": "paragonia:knife_carving"				}			],			"conditions": [				{					"condition": "minecraft:survives_explosion"				}			]		}	]}

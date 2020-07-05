@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "paragonia_furniture",
+  "pattern": [
+    "sss",
+    "sgs",
+    "sss"
+  ],
+  "key": {
+    "s": {
+      "item": "minecraft:stick"
+    },
+    "g": [
+      {
+        "item": "minecraft:glass"
+      }
+    ]
+  },
+  "result": {
+    "item": "paragonia:mirror"
+  }
+}

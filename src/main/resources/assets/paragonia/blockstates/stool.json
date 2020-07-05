@@ -1,0 +1,67 @@
+
+{
+	"variants": {
+		"facing=north,level=down": { "model": "paragonia:block/furniture/stool","y":0,"x":270 },
+		"facing=east,level=down" : { "model": "paragonia:block/furniture/stool","y":90,"x":270 },
+		"facing=south,level=down": { "model": "paragonia:block/furniture/stool","y":180,"x":270 },
+		"facing=west,level=down" : { "model": "paragonia:block/furniture/stool","y":270,"x":270 },
+		
+        "facing=nnw,level=down": { "model": "paragonia:block/furniture/stool_22","y":0,"x":270 },
+        "facing=ene,level=down": { "model": "paragonia:block/furniture/stool_22","y":90,"x":270 },
+        "facing=sse,level=down": { "model": "paragonia:block/furniture/stool_22","y":180,"x":270 },
+        "facing=wsw,level=down": { "model": "paragonia:block/furniture/stool_22","y":270,"x":270 },
+        
+        "facing=northwest,level=down": { "model": "paragonia:block/furniture/stool_45","y":0,"x":270 },
+        "facing=northeast,level=down": { "model": "paragonia:block/furniture/stool_45","y":90,"x":270 },
+        "facing=southeast,level=down": { "model": "paragonia:block/furniture/stool_45","y":180,"x":270 },
+        "facing=southwest,level=down": { "model": "paragonia:block/furniture/stool_45","y":270,"x":270 },
+        
+        "facing=nne,level=down": { "model": "paragonia:block/furniture/stool_67","y":0,"x":270 },
+        "facing=ese,level=down": { "model": "paragonia:block/furniture/stool_67","y":90,"x":270 },
+        "facing=ssw,level=down": { "model": "paragonia:block/furniture/stool_67","y":180,"x":270 },
+        "facing=wnw,level=down": { "model": "paragonia:block/furniture/stool_67","y":270,"x":270 },
+		
+		
+		"facing=north,level=even": { "model": "paragonia:block/furniture/stool","y":0,"x":0 },
+		"facing=east,level=even" : { "model": "paragonia:block/furniture/stool","y":90,"x":0 },
+		"facing=south,level=even": { "model": "paragonia:block/furniture/stool","y":180,"x":0 },
+		"facing=west,level=even" : { "model": "paragonia:block/furniture/stool","y":270,"x":0 },
+		
+        "facing=nnw,level=even": { "model": "paragonia:block/furniture/stool_22","y":0,"x":0 },
+        "facing=ene,level=even": { "model": "paragonia:block/furniture/stool_22","y":90,"x":0 },
+        "facing=sse,level=even": { "model": "paragonia:block/furniture/stool_22","y":180,"x":0 },
+        "facing=wsw,level=even": { "model": "paragonia:block/furniture/stool_22","y":270,"x":0 },
+        
+        "facing=northwest,level=even": { "model": "paragonia:block/furniture/stool_45","y":0,"x":0 },
+        "facing=northeast,level=even": { "model": "paragonia:block/furniture/stool_45","y":90,"x":0 },
+        "facing=southeast,level=even": { "model": "paragonia:block/furniture/stool_45","y":180,"x":0 },
+        "facing=southwest,level=even": { "model": "paragonia:block/furniture/stool_45","y":270,"x":0 },
+        
+        "facing=nne,level=even": { "model": "paragonia:block/furniture/stool_67","y":0,"x":0 },
+        "facing=ese,level=even": { "model": "paragonia:block/furniture/stool_67","y":90,"x":0 },
+        "facing=ssw,level=even": { "model": "paragonia:block/furniture/stool_67","y":180,"x":0 },
+        "facing=wnw,level=even": { "model": "paragonia:block/furniture/stool_67","y":270,"x":0 },
+		
+		
+		"facing=north,level=up": { "model": "paragonia:block/furniture/stool","y":0,"x":90 },
+		"facing=east,level=up" : { "model": "paragonia:block/furniture/stool","y":90,"x":90 },
+		"facing=south,level=up": { "model": "paragonia:block/furniture/stool","y":180,"x":90 },
+		"facing=west,level=up" : { "model": "paragonia:block/furniture/stool","y":270,"x":90 },
+		
+        "facing=nnw,level=up": { "model": "paragonia:block/furniture/stool_22","y":0,"x":90 },
+        "facing=ene,level=up": { "model": "paragonia:block/furniture/stool_22","y":90,"x":90 },
+        "facing=sse,level=up": { "model": "paragonia:block/furniture/stool_22","y":180,"x":90 },
+        "facing=wsw,level=up": { "model": "paragonia:block/furniture/stool_22","y":270,"x":90 },
+        
+        "facing=northwest,level=up": { "model": "paragonia:block/furniture/stool_45","y":0,"x":90 },
+        "facing=northeast,level=up": { "model": "paragonia:block/furniture/stool_45","y":90,"x":90 },
+        "facing=southeast,level=up": { "model": "paragonia:block/furniture/stool_45","y":180,"x":90 },
+        "facing=southwest,level=up": { "model": "paragonia:block/furniture/stool_45","y":270,"x":90 },
+        
+        "facing=nne,level=up": { "model": "paragonia:block/furniture/stool_67","y":0,"x":90 },
+        "facing=ese,level=up": { "model": "paragonia:block/furniture/stool_67","y":90,"x":90 },
+        "facing=ssw,level=up": { "model": "paragonia:block/furniture/stool_67","y":180,"x":90 },
+        "facing=wnw,level=up": { "model": "paragonia:block/furniture/stool_67","y":270,"x":90 }
+	},
+	"inventory": { "model": "paragonia:block/furniture/stool" }
+}

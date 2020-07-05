@@ -1,0 +1,72 @@
+{
+	"__comment": "~ Elsweyr",
+	"textures": {
+		"particle": "paragonia:blocks/decorations/tongs",
+		"texture": "paragonia:blocks/decorations/tongs"
+	},
+	"elements": [ 	 
+		{
+			"__comment": "Handle 1",
+			"from": [ 10.5, 0, 11.5 ],
+			"to": [ 11.5, 1, 14.5 ],
+			"faces": {
+				"down": { "uv": [ 9, 0, 10, 3 ], "texture": "#texture", "rotation": 180 },
+				"up": { "uv": [ 10, 0, 9, 3 ], "texture": "#texture" },
+				"north": { "uv": [ 9, 1, 10, 2 ], "texture": "#texture" },
+				"south": { "uv": [ 10, 1, 9, 2 ], "texture": "#texture" },
+				"west": { "uv": [ 9, 0, 10, 3 ], "texture": "#texture", "rotation": 90 },
+				"east": { "uv": [ 9, 0, 10, 3 ], "texture": "#texture", "rotation": 90 }
+			}
+		},
+		{
+			"__comment": "Handle 2",
+			"from": [ 4.5, 0, 11.5 ],
+			"to": [ 5.5, 1, 14.5 ],
+			"faces": {
+				"down": { "uv": [ 9, 0, 10, 3 ], "texture": "#texture", "rotation": 180 },
+				"up": { "uv": [ 10, 0, 9, 3 ], "texture": "#texture" },
+				"north": { "uv": [ 9, 1, 10, 2 ], "texture": "#texture" },
+				"south": { "uv": [ 10, 1, 9, 2 ], "texture": "#texture" },
+				"west": { "uv": [ 9, 0, 10, 3 ], "texture": "#texture", "rotation": 90 },
+				"east": { "uv": [ 9, 0, 10, 3 ], "texture": "#texture", "rotation": 90 }
+			}
+		},
+		{
+			"__comment": "Tongs",
+			"from": [ 4.5, 0.5, 1.5 ],
+			"to": [ 11.5, 0.501, 11.5 ],
+			"faces": {
+				"down": { "uv": [ 9, 3, 16, 13 ], "texture": "#texture" },
+				"up": { "uv": [ 9, 13, 16, 3 ], "texture": "#texture" }
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation":  [ 56, 0, -90 ],
+			"translation":  [ 7.6903, 2.1168, -3.137 ]
+		},
+		"thirdperson_lefthand": {
+			"rotation":  [ 56, 0, -90 ],
+			"translation":  [ 7.6903, 2.1168, -3.137 ]
+		},
+		"firstperson_righthand": {
+			"translation":  [ 0, 8.7826, 0 ]
+		},
+		"firstperson_lefthand": {
+			"translation":  [ 0, 8.7826, 0 ]
+		},
+		"gui": {
+			"rotation":  [ 24, 147, 0 ],
+			"translation":  [ 0, 6.125, 0 ]
+		},
+		"head": {
+			"translation":  [ 0, -31.14, 0 ],
+			"scale":  [ 1.5, 1.5, 1.5 ]
+		},
+		"ground": {
+			"translation":  [ 0, 3.2663, 0 ],
+			"scale":  [ 0.5, 0.5, 0.5 ]
+		}
+	}
+}

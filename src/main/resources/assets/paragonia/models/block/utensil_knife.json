@@ -1,0 +1,48 @@
+{
+	"__comment": "~ Elsweyr",
+	"textures": {
+		"particle": "paragonia:blocks/decorations/utensils",
+		"texture": "paragonia:blocks/decorations/utensils"
+	},
+	"elements": [ 	 
+		{
+			"__comment": "PlaneY1",
+			"from": [ 7, 0, 5 ],
+			"to": [ 9, 0.001, 11 ],
+			"faces": {
+				"down": { "uv": [ 0, 4, 4, 16 ], "texture": "#texture" },
+				"up": { "uv": [ 0, 16, 4, 4 ], "texture": "#texture" }
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation":  [ -54, 0, -4 ],
+			"translation":  [ 0.4918, 5.2418, -5.447 ]
+		},
+		"thirdperson_lefthand": {
+			"rotation":  [ -54, 0, -4 ],
+			"translation":  [ 0.4918, 5.2418, -5.447 ]
+		},
+		"firstperson_righthand": {
+			"rotation":  [ 0, 180, 0 ],
+			"translation":  [ 0, 9.7872, 0 ]
+		},
+		"firstperson_lefthand": {
+			"rotation":  [ 0, 180, 0 ],
+			"translation":  [ 0, 9.7872, 0 ]
+		},
+		"gui": {
+			"rotation":  [ -73, 19, 0 ],
+			"translation":  [ 0, 4.4157, 0 ],
+			"scale":  [ 2, 2, 2 ]
+		},
+		"head": {
+			"translation":  [ 0, -29.61, 0 ],
+			"scale":  [ 1.65, 1.65, 1.65 ]
+		},
+		"ground": {
+			"translation":  [ 0, 4.6086, 0 ]
+		}
+	}
+}

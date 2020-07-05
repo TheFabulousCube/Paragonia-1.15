@@ -1,0 +1,44 @@
+{
+	"__comment": "~ Elsweyr",
+	"textures": {
+		"particle": "paragonia:blocks/decorations/clothesline_large",
+		"texture": "paragonia:blocks/decorations/clothesline_large"
+	},
+	"elements": [ 	 
+		{
+			"__comment": "PlaneZ1",
+			"from": [ -16, -16, 8 ],
+			"to": [ 32, 32, 8.001 ],
+			"faces": {
+				"north": { "uv": [ 16, 0, 0, 16 ], "texture": "#texture" },
+				"south": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture" }
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation":  [ 0, 0.3097, 0.6983 ],
+			"scale":  [ 0.25, 0.25, 0.25 ]
+		},
+		"thirdperson_lefthand": {
+			"translation":  [ 0, 0.3097, 0.6983 ],
+			"scale":  [ 0.25, 0.25, 0.25 ]
+		},
+		"firstperson_righthand": {
+			"translation":  [ -34.55, 0, 0 ]
+		},
+		"firstperson_lefthand": {
+			"translation":  [ -34.55, 0, 0 ]
+		},
+		"gui": {
+			"scale":  [ 0.25, 0.25, 0.25 ]
+		},
+		"head": {
+			"scale":  [ 3.25, 3.25, 3.25 ]
+		},
+		"ground": {
+			"translation":  [ 0, 1.3804, 0 ],
+			"scale":  [ 0.25, 0.25, 0.25 ]
+		}
+	}
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "paragonia_bottle",
+  "pattern": [
+    "s"
+  ],
+  "key": {
+    "s": [
+      {
+        "item": "minecraft:glass_bottle"
+      }
+    ]
+  },
+  "result": {
+    "item": "paragonia:bottle_2"
+  }
+}

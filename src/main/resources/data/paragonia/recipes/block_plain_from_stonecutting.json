@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:stone",
+    "count": 2
+  },
+  "result": "paragonia:block_plain",
+  "count": 1
+}

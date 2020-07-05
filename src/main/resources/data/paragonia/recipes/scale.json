@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "paragonia_scale",
+  "pattern": [
+    "ggg",
+    " g ",
+    "ggg"
+  ],
+  "key": {
+    "g": [
+      {
+        "item": "minecraft:gold_nugget"
+      }
+    ]
+  },
+  "result": {
+    "item": "paragonia:scale"
+  }
+}
