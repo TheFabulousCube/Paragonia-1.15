@@ -1,14 +1,17 @@
 {
   "homepage": "http://paragonia.tadaatiedye.com",
   "promos": {
-    "1.15.2-latest": "11.14.3.1543",
-    "1.15.2-recommended": "0.7.0-alpha",
+    "1.15.2-latest": "0.6.8-alpha",
+    "1.15.2-recommended": "0.6.8-alpha",
 	"1.12.2-latest": "0.87.0",
 	"1.12.2-recommended": "0.87.0"
   },
   "1.15.2": {
-    "11.14.3.1543": "Not really out yet.  this is to test the updater",
-    "0.7.0-alpha": "Mobs: Ghost & Wood Sprite, they don't do much though."
+    "0.7.0-alpha": "Lots of code clean up. No more spamming the logs.",
+    "0.6.8-alpha": "Mobs: Ghost & Wood Sprite, they don't do much though.",
+    "0.5.3-alpha": "Rotaional blocks are back!",
+    "0.4.8-alpha": "Foods blocks are edible, not craftable. They are under Minecraft:Foods.",
+    "0.3.5-alpha": "Wide blocks (Dirty Block, Dark Block, Light Block, Plain Block) are craftable."
   },
   "1.12.2": {
   	"0.87.0": "Last & final version"

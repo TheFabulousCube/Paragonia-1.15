@@ -13,7 +13,7 @@ loaderVersion="[31,)" #mandatory This is typically bumped every Minecraft versio
 [[mods]] #mandatory
 
 modId="paragonia" #mandatory
-version="0.7.0-alpha" #mandatory ${file.jarVersion}
+version="0.6.8-alpha" #mandatory ${file.jarVersion}
 displayName="Paragonia" #mandatory
 updateJSONURL="https://raw.githubusercontent.com/TheFabulousCube/Paragonia-1.15/master/src/main/resources/update.json" #optional
 displayURL="https://github.com/TheFabulousCube/Paragonia-1.15" #optional
@@ -21,7 +21,7 @@ logoFile="pack.png"
 credits="All artwork and design by Elsweyr" 
 authors="The Fabulous Cube" 
 
-description="Mod pack designed to supplement Paragonia Texture pack Version ${file.jarVersion}"
+description="Mod pack designed to supplement Paragonia Texture pack"
  
 [[dependencies.paragonia]] #optional
     modId="forge" #mandatory
