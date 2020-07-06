@@ -1,10 +1,7 @@
 package com.thefabulouscube.paragonia.entities;
 
-import java.util.UUID;
-
 import javax.annotation.Nullable;
 
-import com.thefabulouscube.paragonia.Paragonia;
 import com.thefabulouscube.paragonia.init.ItemInit;
 
 import net.minecraft.block.BlockState;
@@ -45,7 +42,6 @@ public class GhostEntity extends AnimalEntity implements IFlyingAnimal {
 	private LivingEntity killer = null;
 	private float rollAmount;
 	private float rollAmountO;
-	private UUID lastHurtBy;
 
 	public GhostEntity(EntityType<? extends GhostEntity> type, World worldIn) {
 		super(type, worldIn);
@@ -197,11 +193,6 @@ public class GhostEntity extends AnimalEntity implements IFlyingAnimal {
 	 */
 	public void setRevengeTarget(@Nullable LivingEntity livingBase) {
 		super.setRevengeTarget(livingBase);
-		Paragonia.LOGGER.info("setRevengeTarget method: killer is set: " + livingBase);
-		if (livingBase != null) {
-			this.lastHurtBy = livingBase.getUniqueID();
-		}
-
 	}
 
 	public boolean hasKiller() {
@@ -214,12 +205,9 @@ public class GhostEntity extends AnimalEntity implements IFlyingAnimal {
 
 	public boolean setKiller(LivingEntity killerIn) {
 		if (killerIn instanceof LivingEntity && killerIn.isAlive()) {
-			Paragonia.LOGGER.info("setKiller method: killer is set: " + killerIn);
 			this.killer = killerIn;
 			return true;
 		}
-
-		Paragonia.LOGGER.info("setKiller method: FAILED ");
 		return false;
 	}
 
@@ -227,9 +215,6 @@ public class GhostEntity extends AnimalEntity implements IFlyingAnimal {
 
 		AvengeDeathGoal(GhostEntity ghostIn) {
 			super(ghostIn, 1.4D, true);
-			Paragonia.LOGGER.info("Avenge Death Goal hit killer: " + ghostIn.getKiller());
-			Paragonia.LOGGER.info("Avenge Death Goal attackTarget: " + ghostIn.getAttackTarget());
-			Paragonia.LOGGER.info("Avenge Death Goal revengeTarget: " + ghostIn.getRevengeTarget());
 		}
 
 		/**
@@ -246,11 +231,7 @@ public class GhostEntity extends AnimalEntity implements IFlyingAnimal {
 		 * necessary for execution in this method as well.
 		 */
 		public boolean shouldExecute() {
-			if (super.shouldExecute() && GhostEntity.this.killer != null && GhostEntity.this.killer.isAlive()) {
-				Paragonia.LOGGER.info("Avenge Death Goal begin: " + GhostEntity.this.killer);
-				return true;
-			}
-			return false;
+			return (super.shouldExecute() && GhostEntity.this.killer != null && GhostEntity.this.killer.isAlive());
 		}
 
 		/**
@@ -260,7 +241,6 @@ public class GhostEntity extends AnimalEntity implements IFlyingAnimal {
 			if (GhostEntity.this.killer != null && GhostEntity.this.killer.isAlive()) {
 				return super.shouldContinueExecuting();
 			} else {
-				Paragonia.LOGGER.info("Avenge Death cancelled: " + GhostEntity.this.killer);
 				GhostEntity.this.setKiller(null);
 				GhostEntity.this.getNavigator().clearPath();
 				GhostEntity.this.setGlowing(false);

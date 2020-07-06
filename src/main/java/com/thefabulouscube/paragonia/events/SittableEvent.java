@@ -26,7 +26,6 @@ public class SittableEvent {
 
 	@SubscribeEvent
 	public static <T> void onInteractWithBlock(PlayerInteractEvent.RightClickBlock event) {
-		Paragonia.LOGGER.info("Sittable event fired");
 		PlayerEntity player = event.getPlayer();
 		if (player.getRidingEntity() != null)
 		{
@@ -37,10 +36,8 @@ public class SittableEvent {
 		BlockPos pos = event.getPos();
 		Vec3d vec = new Vec3d(pos.getX(), pos.getY(), pos.getZ());
 		double maxDist = 2.0D;
-		Paragonia.LOGGER.info("Sittable event world isRemote " + worldIn.isRemote + "BlockPos: " + pos.getX() + ", " +  pos.getY() + ", " +  pos.getZ());
 		if ((vec.x - player.getPosX()) * (vec.x - player.getPosX()) + (vec.z - player.getPosZ()) * (vec.z - player.getPosZ()) > maxDist * maxDist)
 		{
-			Paragonia.LOGGER.info("Too far away");
 			return;
 		}
 		
@@ -49,24 +46,16 @@ public class SittableEvent {
 		ItemStack offStack = player.getHeldItemOffhand();
 		if (worldIn.isRemote || (!mainStack.isEmpty() || !offStack.isEmpty()))
 		{
-			Paragonia.LOGGER.info("Cancelling Sittable");
 			return;
 		}
 		
 		if (state.getBlock() instanceof OrthoBlock && ((OrthoBlock) state.getBlock()).isSittable())
 		{
-			Paragonia.LOGGER.info("Seat is at " + pos.getX() + ", " + pos.getY() + ", " + pos.getZ());
+//			Paragonia.LOGGER.info("Seat is at " + pos.getX() + ", " + pos.getY() + ", " + pos.getZ());
 			SeatEntity block = new SeatEntity(worldIn, pos);
 			worldIn.addEntity(block);
 			player.startRiding(block);
 		}
-//		LivingEntity livingEntity = event.getEntityLiving();
-//		World world = livingEntity.getEntityWorld();
-//		world.setBlockState(livingEntity.getPosition().add(0, 5, 0), BlockInit.EXAMPLE_BLOCK.get().getDefaultState());
-//		livingEntity.addPotionEffect(new EffectInstance(Effects.JUMP_BOOST, 600, 255));
-//		livingEntity.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 5000, 255));
-//		livingEntity.setGlowing(true);
-
 	}
 	
 
@@ -86,26 +75,21 @@ public class SittableEvent {
 			public void tick() 
 			{//Paragonia.LOGGER.info("Seat Base Tick");
 				BlockPos pos = getPosition();
-				Paragonia.LOGGER.info("Sittable event BlockPos: " + pos.getX() + ", " +  pos.getY() + ", " +  pos.getZ());
 				if (!(getEntityWorld().getBlockState(pos).getBlock() instanceof OrthoBlock))
 				{
 					remove();
-
-					Paragonia.LOGGER.info("Sittable event " + getEntityWorld().getBlockState(pos).getBlock());
 					return;
 				}
 				
 				List<Entity> passengers = getPassengers();
 				if(passengers.isEmpty())
 				{
-					Paragonia.LOGGER.info("Sittable event passengers: " + passengers.size());
 					remove();
 				}
 				for (Entity entity : passengers)
 				{
 					if (entity.isCrouching())
 					{
-						Paragonia.LOGGER.info("Seat Exit " + entity.rotationYaw + ", crouching: "  + entity.isCrouching());
 						remove();
 					}
 				}

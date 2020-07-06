@@ -14,7 +14,6 @@ public class WoodSpriteRender extends MobRenderer<WoodSpriteEntity, WoodSpriteMo
 
 	public WoodSpriteRender(EntityRendererManager renderManagerIn) {
 		super(renderManagerIn, new WoodSpriteModel<WoodSpriteEntity>(), 0.5F);
-		Paragonia.LOGGER.info("Wood Sprite Render");
 	}
 
 	@Override

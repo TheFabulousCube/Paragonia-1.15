@@ -14,7 +14,6 @@ public class GhostRender extends MobRenderer<GhostEntity, GhostModel<GhostEntity
 	
 	public GhostRender(EntityRendererManager renderMangerIn) {
 		super(renderMangerIn, new GhostModel<GhostEntity>(), 0.0F);
-		Paragonia.LOGGER.info("Ghost Render");
 	}
 
 	@Override

@@ -12,13 +12,11 @@ import com.thefabulouscube.paragonia.objects.blocks.FoodBlock;
 import com.thefabulouscube.paragonia.util.CreativeTabs;
 
 import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
-import net.minecraft.world.biome.Biome;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -72,49 +70,30 @@ public class Paragonia {
 
 	@SubscribeEvent
 	public static void onRegisteringItems(final RegistryEvent.Register<Item> event) {
-		LOGGER.info("Registered Item: Start Registry Event");
 		final IForgeRegistry<Item> registry = event.getRegistry();
 
 		BlockInit.BLOCKS.getEntries().parallelStream().map(RegistryObject::get).forEach(block -> {
-			LOGGER.info("Registering Item: " + block.getRegistryName());
 			final Item.Properties properties = new Item.Properties().group(CreativeTabs.DECORATIONS);
 			final BlockItem blockItem = new BlockItem(block, properties);
 			blockItem.setRegistryName(block.getRegistryName());
 			registry.register(blockItem);
-			LOGGER.info("Registered Item: " + blockItem.getRegistryName());
 		});
 
 		BlockInit.FOOD.getEntries().parallelStream().filter(block -> (block.get() instanceof FoodBlock))
 				.map(RegistryObject::get).forEach(block -> {
-
-					LOGGER.info("Registering Item: " + block.getRegistryName());
 					final Item.Properties properties = new Item.Properties().group(ItemGroup.FOOD)
 							.food(((FoodBlock) block).getFood());
 					final BlockItem blockItem = new BlockItem(block, properties);
 					blockItem.setRegistryName(block.getRegistryName());
 					registry.register(blockItem);
-
-					LOGGER.info("Registered Item: " + blockItem.getRegistryName());
 				});
 
 		BlockInit.FURNITURE.getEntries().parallelStream().map(RegistryObject::get).forEach(block -> {
-			LOGGER.info("Registering Item: " + block.getRegistryName());
 			final Item.Properties properties = new Item.Properties().group(CreativeTabs.FURNITURE);
 			final BlockItem blockItem = new BlockItem(block, properties);
 			blockItem.setRegistryName(block.getRegistryName());
 			registry.register(blockItem);
-			LOGGER.info("Registered Item: " + blockItem.getRegistryName());
 		});
-
-//    	ItemInit.ITEMS.getEntries().parallelStream().map(RegistryObject::get).forEach(egg -> {
-////    		final Item.Properties properties = new ItemProperties();
-////    		final MySpawnEggItem.Properties properties = new MySpawnEggItem.Properties();
-//    		final MySpawnEggItem spawnEgg = new MySpawnEggItem(EntityInit.GHOST.get(), 11141120, 16777215, (new Item.Properties().group(CreativeTabs.CREATURES)));
-//    		spawnEgg.setRegistryName(MOD_ID, "ghost_spawn_egg2");
-//    		registry.register(spawnEgg);
-//    	});
-
-		LOGGER.info("Registered Item: Finished Registry Event");
 	}
 
 	/*
@@ -143,18 +122,10 @@ public class Paragonia {
 	 */
 
 	private void setup(final FMLCommonSetupEvent event) {
-		// some preinit code
-		LOGGER.info("HELLO FROM PREINIT");
-		LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
-		
-//        DeferredWorkQueue.runLater(() -> {
-//        	  ((FireBlock) Blocks.FIRE).setFireInfo(YourBlockInit.YourBlock.get(), encouragement, flammability);
-//        	});
 	}
 
 	private void doClientStuff(final FMLClientSetupEvent event) {
 		// do something that can only be done on the client
-		LOGGER.info("Registering cutouts {}", event.getMinecraftSupplier().get().gameSettings);
 		RenderTypeLookup.setRenderLayer(BlockInit.APPLE.get(), RenderType.getCutout());
 		RenderTypeLookup.setRenderLayer(BlockInit.BEET.get(), RenderType.getCutout());
 		RenderTypeLookup.setRenderLayer(BlockInit.ORANGE.get(), RenderType.getCutout());
@@ -179,7 +150,6 @@ public class Paragonia {
 //    	RenderTypeLookup.setRenderLayer(BlockInit.BANNER_SIMPLE_YELLOW.get(), RenderType.getCutout());
 		RenderTypeLookup.setRenderLayer(BlockInit.BOOKREST.get(), RenderType.getCutout());
 		RenderTypeLookup.setRenderLayer(BlockInit.SCALE.get(), RenderType.getTranslucent());
-		LOGGER.info("Got game settings {}", event.getMinecraftSupplier().get().gameSettings);
 	}
 
 	private void enqueueIMC(final InterModEnqueueEvent event) {
@@ -200,7 +170,6 @@ public class Paragonia {
 	@SubscribeEvent
 	public void onServerStarting(FMLServerStartingEvent event) {
 		// do something when the server starts
-		LOGGER.info("HELLO from server starting");
 	}
 
 	// You can use EventBusSubscriber to automatically subscribe events on the
@@ -211,7 +180,6 @@ public class Paragonia {
 		@SubscribeEvent
 		public static void onBlocksRegistry(final RegistryEvent.Register<Block> blockRegistryEvent) {
 			// register a new block here
-			LOGGER.info("HELLO from Register Block");
 		}
 	}
 }

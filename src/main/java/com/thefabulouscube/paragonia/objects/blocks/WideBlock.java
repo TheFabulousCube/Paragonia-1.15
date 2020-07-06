@@ -33,7 +33,6 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 public class WideBlock extends HorizontalBlock {
 	protected static final VoxelShape BLOCK_AABB = Block.makeCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 16.0D, 16.0D);
 	public static final EnumProperty<WideBlockPart> PART = MyBlockStateProperties.WIDEBLOCK_PART;
-//	public static final Block bd = new BedBlock();
 
 	public WideBlock(Block.Properties builder) {
 		super(builder);
@@ -97,47 +96,7 @@ public class WideBlock extends HorizontalBlock {
 
 	   }
 	
-	
-/***   Remember this for the scale   ***/
-	/*
-	 * And how do I change the block state when the player right-clicks my block
-	 * with an empty hand? I think I'm close but I can't figure out how to change
-	 * the state:
-	 * 
-	 * @Override public void onBlockClicked(BlockState state, World worldIn,
-	 * BlockPos pos, PlayerEntity player) { super.onBlockClicked(state, worldIn,
-	 * pos, player);
-	 * 
-	 * if (player.getHeldItemMainhand().isEmpty()) { // What goes here? } } 
-	 * 
-	 * you can do that with world.setblock or setblockstate or something 
-	 * 
-	 * I have a block with lots of varients. One of the
-	 * properties is called "style" and can be from 0 to 7. I want to increment it
-	 * when the player right-clicks on the block with an empty hand. Ok let me try,
-	 * thanks so much
-	 */
-	
-	
-//	   /**
-//	    * Update the provided state given the provided neighbor facing and neighbor state, returning a new state.
-//	    * For example, fences make their connections to the passed in state if possible, and wet concrete powder immediately
-//	    * returns its solidified counterpart.
-//	    * Note that this method should ideally consider only the specific face passed in.
-//	    */
-//	   public BlockState updatePostPlacement(BlockState stateIn, Direction facing, BlockState facingState, IWorld worldIn, BlockPos currentPos, BlockPos facingPos) {
-//	      if (facing == getDirectionToOther(stateIn.get(PART), stateIn.get(HORIZONTAL_FACING))) {
-//	         return facingState.getBlock() == this && facingState.get(PART) != stateIn.get(PART) ? stateIn.with(OCCUPIED, facingState.get(OCCUPIED)) : Blocks.AIR.getDefaultState();
-//	      } else {
-//	         return super.updatePostPlacement(stateIn, facing, facingState, worldIn, currentPos, facingPos);
-//	      }
-//	   }
-
-	/**
-	    * Given a bed part and the direction it's facing, find the direction to move to get the other bed part
-	    */
 	private static Direction getDirectionToOther(WideBlockPart part, Direction direction) {
-//		return part == WideBlockPart.LEFT ? direction : direction.getOpposite();
 		switch (direction) {
 		case NORTH:
 			return part == WideBlockPart.LEFT ? Direction.WEST : Direction.EAST;

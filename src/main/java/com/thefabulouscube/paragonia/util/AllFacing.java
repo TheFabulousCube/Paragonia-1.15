@@ -1,7 +1,5 @@
 package com.thefabulouscube.paragonia.util;
 
-import com.thefabulouscube.paragonia.Paragonia;
-
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.IStringSerializable;
 import net.minecraft.util.math.BlockPos;
@@ -138,15 +136,8 @@ public enum AllFacing implements IStringSerializable
 		double inRadians = Math.atan2(deltaZ, deltaX);
 		double inDegrees = Math.toDegrees(inRadians) + 180; // offset for negative values will need to be adjusted for others
 		int meta = (int) (Math.round(inDegrees / (360/numDirs)));
-		Paragonia.LOGGER.info("Placing " + numDirs + ": deltaX: " + deltaX + " deltaZ:" + deltaZ);
-//		Paragonia.LOGGER.info("from: PlayerX: " + Math.floor(player.getPosX()) + " PlayerZ: " + Math.floor(player.getPosZ()) + " blockX: " + block.getX() + " blockZ: " + block.getZ());
 		
-		Paragonia.LOGGER.info("Placing " + numDirs + ":  inDegrees = " + inDegrees);
-		Paragonia.LOGGER.info("Placing " + numDirs + ":  raw degrees = " + Math.toDegrees(inRadians));
-		Paragonia.LOGGER.info("Placing " + numDirs + ": raw meta = " + meta);
-		Paragonia.LOGGER.info("Placing " + numDirs + ": adjusted meta = " + (meta % numDirs));
-		Paragonia.LOGGER.info("Placing " + numDirs + ": test meta = " + (meta) * modifier);
-		Paragonia.LOGGER.info("Placing " + numDirs + ": test2 meta = " + (meta % numDirs) * modifier);
+
 //		return AllFacing.values()[Math.abs(meta)];
 		return AllFacing.values()[(meta % numDirs) * modifier];
 

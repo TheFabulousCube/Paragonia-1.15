@@ -1,6 +1,5 @@
 package com.thefabulouscube.paragonia.objects.blocks;
 
-import com.thefabulouscube.paragonia.Paragonia;
 import com.thefabulouscube.paragonia.util.AABB;
 import com.thefabulouscube.paragonia.util.AllFacing;
 import com.thefabulouscube.paragonia.util.Level;
@@ -49,9 +48,6 @@ public class OrthoBlock extends Block {
 
 	@Override
 	public BlockState getStateForPlacement(BlockItemUseContext context) {
-		Paragonia.LOGGER.info("OrthoBlock FACING: " + AllFacing.getFacing(context.getPlayer(), context.getPos(), 4)
-				+ " LEVEL: " + Level.getLevel(context.getPlayer(), context.getPos()));
-
 		return this.stateContainer.getBaseState()
 				.with(FACING, AllFacing.getFacing(context.getPlayer(), context.getPos(), 4))
 				.with(LEVEL, Level.getLevel(context.getPlayer(), context.getPos()));

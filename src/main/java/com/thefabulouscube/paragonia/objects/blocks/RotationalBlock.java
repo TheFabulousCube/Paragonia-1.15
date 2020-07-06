@@ -1,6 +1,5 @@
 package com.thefabulouscube.paragonia.objects.blocks;
 
-import com.thefabulouscube.paragonia.Paragonia;
 import com.thefabulouscube.paragonia.util.AABB;
 import com.thefabulouscube.paragonia.util.AllFacing;
 import com.thefabulouscube.paragonia.util.Level;
@@ -42,9 +41,7 @@ public class RotationalBlock extends Block {
 	}
 
 	@Override
-	public BlockState getStateForPlacement(BlockItemUseContext context) {
-		Paragonia.LOGGER.info("RotationalBlock DIRECTION: " + AllFacing.getFacing(context.getPlayer(), context.getPos(), 16) + " LEVEL: " + Level.getLevel(context.getPlayer(), context.getPos()));
-		
+	public BlockState getStateForPlacement(BlockItemUseContext context) {		
 		return this.stateContainer.getBaseState().with(FACING, AllFacing.getFacing(context.getPlayer(), context.getPos(), 16)).with(LEVEL, Level.getLevel(context.getPlayer(), context.getPos()));
 	}
 

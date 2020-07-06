@@ -2,7 +2,6 @@ package com.thefabulouscube.paragonia.client.entity.model;
 
 import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.vertex.IVertexBuilder;
-import com.thefabulouscube.paragonia.Paragonia;
 import com.thefabulouscube.paragonia.entities.GhostEntity;
 
 import net.minecraft.client.renderer.entity.model.EntityModel;
@@ -59,7 +58,6 @@ public class GhostModel<T extends GhostEntity> extends EntityModel<GhostEntity> 
 		setRotationAngle(rightArmLower, 0.0F, -0.2618F, 0.0F);
 		rightArm.addChild(rightArmLower);
 		rightArmLower.setTextureOffset(0, 54).addBox(0.0F, -2.0F, -6.0F, 4.0F, 4.0F, 6.0F, 0.0F, false);
-		Paragonia.LOGGER.info("Ghost Model body: {0}, head: {1}, leftArm: {2} & {3}, rightArm2: {4} & {5}", body, head, leftArm, leftArmLower, rightArm, rightArmLower);
 	}
 
 
