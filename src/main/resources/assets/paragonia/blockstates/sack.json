@@ -1,5 +1,19 @@
 {
-    "variants": {
-        "inventory": { "model": "paragonia:block/sack" }
-    }
+	"variants": {
+		"facing=north,level=down": { "model": "paragonia:block/sack","y":0,"x":270 },
+		"facing=east,level=down" : { "model": "paragonia:block/sack","y":90,"x":270 },
+		"facing=south,level=down": { "model": "paragonia:block/sack","y":180,"x":270 },
+		"facing=west,level=down" : { "model": "paragonia:block/sack","y":270,"x":270 },
+		
+		"facing=north,level=even": { "model": "paragonia:block/sack","y":0,"x":0 },
+		"facing=east,level=even" : { "model": "paragonia:block/sack","y":90,"x":0 },
+		"facing=south,level=even": { "model": "paragonia:block/sack","y":180,"x":0 },
+		"facing=west,level=even" : { "model": "paragonia:block/sack","y":270,"x":0 },
+		
+		
+		"facing=north,level=up": { "model": "paragonia:block/sack","y":0,"x":90 },
+		"facing=east,level=up" : { "model": "paragonia:block/sack","y":90,"x":90 },
+		"facing=south,level=up": { "model": "paragonia:block/sack","y":180,"x":90 },
+		"facing=west,level=up" : { "model": "paragonia:block/sack","y":270,"x":90 }
+	}
 }

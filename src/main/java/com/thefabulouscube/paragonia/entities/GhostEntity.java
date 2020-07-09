@@ -1,15 +1,19 @@
 package com.thefabulouscube.paragonia.entities;
 
+import java.util.Random;
+
 import javax.annotation.Nullable;
 
 import com.thefabulouscube.paragonia.init.ItemInit;
 
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
 import net.minecraft.entity.AgeableEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.SharedMonsterAttributes;
+import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.ai.controller.FlyingMovementController;
 import net.minecraft.entity.ai.goal.HurtByTargetGoal;
 import net.minecraft.entity.ai.goal.LookAtGoal;
@@ -32,6 +36,7 @@ import net.minecraft.util.SoundEvents;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.RayTraceResult;
+import net.minecraft.world.IWorld;
 import net.minecraft.world.World;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
@@ -98,6 +103,15 @@ public class GhostEntity extends AnimalEntity implements IFlyingAnimal {
 		this.getAttributes().registerAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(1.0D);
 		this.getAttribute(SharedMonsterAttributes.FOLLOW_RANGE).setBaseValue(48.0D);
 	}
+	   /**
+	    * Static predicate for determining whether or not an animal can spawn at the provided location.
+	    *  
+	    * @param animal The animal entity to be spawned
+	    */
+	   public static boolean canAnimalSpawn(EntityType<? extends AnimalEntity> animal, IWorld worldIn, SpawnReason reason, BlockPos pos, Random random) {
+	      return !worldIn.canBlockSeeSky(pos) && worldIn.getLightSubtracted(pos, 0) < 8;
+	   }
+	   
 
 	/**
 	 * Returns new PathNavigateGround instance

@@ -70,23 +70,24 @@ public class BlockInit {
 	
 
 	// GENERATED
+	public static final RegistryObject<Block> ANVIL = BLOCKS.register("anvil", () -> new RotationalBlock(Block.Properties.create(Material.WOOD), AABB.ANVIL));
 	public static final RegistryObject<Block> AXE = BLOCKS.register("axe", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.AXE));
-//	public static final RegistryObject<Block> BANNER_SIMPLE_BLACK = BLOCKS.register("banner_simple_black", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.BANNER));
-//	public static final RegistryObject<Block> BANNER_SIMPLE_BLUE = BLOCKS.register("banner_simple_blue", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.BANNER));
-//	public static final RegistryObject<Block> BANNER_SIMPLE_BROWN = BLOCKS.register("banner_simple_brown", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.BANNER));
-//	public static final RegistryObject<Block> BANNER_SIMPLE_CYAN = BLOCKS.register("banner_simple_cyan", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.BANNER));
-//	public static final RegistryObject<Block> BANNER_SIMPLE_GREEN = BLOCKS.register("banner_simple_green", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.BANNER));
-//	public static final RegistryObject<Block> BANNER_SIMPLE_GREY = BLOCKS.register("banner_simple_grey", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.BANNER));
-//	public static final RegistryObject<Block> BANNER_SIMPLE_LIGHTBLUE = BLOCKS.register("banner_simple_lightblue", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.BANNER));
-//	public static final RegistryObject<Block> BANNER_SIMPLE_LIGHTGREY = BLOCKS.register("banner_simple_lightgrey", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.BANNER));
-//	public static final RegistryObject<Block> BANNER_SIMPLE_LIME = BLOCKS.register("banner_simple_lime", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.BANNER));
-//	public static final RegistryObject<Block> BANNER_SIMPLE_MAGENTA = BLOCKS.register("banner_simple_magenta", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.BANNER));
-//	public static final RegistryObject<Block> BANNER_SIMPLE_ORANGE = BLOCKS.register("banner_simple_orange", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.BANNER));
-//	public static final RegistryObject<Block> BANNER_SIMPLE_PINK = BLOCKS.register("banner_simple_pink", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.BANNER));
-//	public static final RegistryObject<Block> BANNER_SIMPLE_PURPLE = BLOCKS.register("banner_simple_purple", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.BANNER));
-//	public static final RegistryObject<Block> BANNER_SIMPLE_RED = BLOCKS.register("banner_simple_red", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.BANNER));
-//	public static final RegistryObject<Block> BANNER_SIMPLE_WHITE = BLOCKS.register("banner_simple_white", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.BANNER));
-//	public static final RegistryObject<Block> BANNER_SIMPLE_YELLOW = BLOCKS.register("banner_simple_yellow", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.BANNER));
+	public static final RegistryObject<Block> BANNER_SIMPLE_BLACK = BLOCKS.register("banner_simple_black", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.BANNER));
+	public static final RegistryObject<Block> BANNER_SIMPLE_BLUE = BLOCKS.register("banner_simple_blue", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.BANNER));
+	public static final RegistryObject<Block> BANNER_SIMPLE_BROWN = BLOCKS.register("banner_simple_brown", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.BANNER));
+	public static final RegistryObject<Block> BANNER_SIMPLE_CYAN = BLOCKS.register("banner_simple_cyan", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.BANNER));
+	public static final RegistryObject<Block> BANNER_SIMPLE_GREEN = BLOCKS.register("banner_simple_green", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.BANNER));
+	public static final RegistryObject<Block> BANNER_SIMPLE_GREY = BLOCKS.register("banner_simple_grey", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.BANNER));
+	public static final RegistryObject<Block> BANNER_SIMPLE_LIGHTBLUE = BLOCKS.register("banner_simple_lightblue", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.BANNER));
+	public static final RegistryObject<Block> BANNER_SIMPLE_LIGHTGREY = BLOCKS.register("banner_simple_lightgrey", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.BANNER));
+	public static final RegistryObject<Block> BANNER_SIMPLE_LIME = BLOCKS.register("banner_simple_lime", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.BANNER));
+	public static final RegistryObject<Block> BANNER_SIMPLE_MAGENTA = BLOCKS.register("banner_simple_magenta", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.BANNER));
+	public static final RegistryObject<Block> BANNER_SIMPLE_ORANGE = BLOCKS.register("banner_simple_orange", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.BANNER));
+	public static final RegistryObject<Block> BANNER_SIMPLE_PINK = BLOCKS.register("banner_simple_pink", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.BANNER));
+	public static final RegistryObject<Block> BANNER_SIMPLE_PURPLE = BLOCKS.register("banner_simple_purple", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.BANNER));
+	public static final RegistryObject<Block> BANNER_SIMPLE_RED = BLOCKS.register("banner_simple_red", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.BANNER));
+	public static final RegistryObject<Block> BANNER_SIMPLE_WHITE = BLOCKS.register("banner_simple_white", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.BANNER));
+	public static final RegistryObject<Block> BANNER_SIMPLE_YELLOW = BLOCKS.register("banner_simple_yellow", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.BANNER));
 //	public static final RegistryObject<Block> BARREL = BLOCKS.register("barrel", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.BARREL));
 //	public static final RegistryObject<Block> BARREL_ROPE = BLOCKS.register("barrel_rope", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.BARREL));
 //	public static final RegistryObject<Block> BASKET_WOODEN = BLOCKS.register("basket_wooden", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.BASKET_WOODEN));
@@ -150,7 +151,7 @@ public class BlockInit {
 //	public static final RegistryObject<Block> ORANGE_BUNCH = BLOCKS.register("orange_bunch", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.ORANGE_BUNCH));
 //	public static final RegistryObject<Block> PAPERS_1 = BLOCKS.register("papers_1", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.PAPERS_1));
 //	public static final RegistryObject<Block> PAPERS_STACK = BLOCKS.register("papers_stack", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.PAPERS_STACK));
-//	public static final RegistryObject<Block> PIE_DISH = BLOCKS.register("pie_dish", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.PIE_DISH));
+	public static final RegistryObject<Block> PIE_DISH = BLOCKS.register("pie_dish", () -> new RotationalBlock(Block.Properties.create(Material.WOOD), AABB.PIE_DISH));
 //	public static final RegistryObject<Block> PLAQUE_DEER = BLOCKS.register("plaque_deer", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.PLAQUE_DEER));
 //	public static final RegistryObject<Block> PLAQUE_FISH_LARGE = BLOCKS.register("plaque_fish_large", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.PLAQUE_FISH_LARGE));
 //	public static final RegistryObject<Block> PLATE = BLOCKS.register("plate", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.PLATE));
@@ -158,7 +159,7 @@ public class BlockInit {
 //	public static final RegistryObject<Block> PODIUM_STONE = BLOCKS.register("podium_stone", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.PODIUM_STONE));
 //	public static final RegistryObject<Block> POT = BLOCKS.register("pot", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.POT));
 //	public static final RegistryObject<Block> QUILL = BLOCKS.register("quill", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.QUILL));
-//	public static final RegistryObject<Block> SACK = BLOCKS.register("sack", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.SACK));
+	public static final RegistryObject<Block> SACK = BLOCKS.register("sack", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.SACK));
 //	public static final RegistryObject<Block> SCALE = BLOCKS.register("scale", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.SCALE));
 //	public static final RegistryObject<Block> SCROLL = BLOCKS.register("scroll", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.SCROLL));
 //	public static final RegistryObject<Block> SCYTHE = BLOCKS.register("scythe", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.SCYTHE));
@@ -196,7 +197,7 @@ public class BlockInit {
 //	public static final RegistryObject<Block> TORCH = BLOCKS.register("torch", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.TORCH));
 //	public static final RegistryObject<Block> TORCH_CLUSTER = BLOCKS.register("torch_cluster", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.TORCH_CLUSTER));
 //	public static final RegistryObject<Block> TORCH_SKELETON = BLOCKS.register("torch_skeleton", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.TORCH_SKELETON));
-	public static final RegistryObject<Block> TROUGH = BLOCKS.register("trough", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.TROUGH));
+//	public static final RegistryObject<Block> TROUGH = BLOCKS.register("trough", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.TROUGH));
 //	public static final RegistryObject<Block> TROUGH_WATER = BLOCKS.register("trough_water", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.TROUGH_WATER));
 //	public static final RegistryObject<Block> TROUGH_WHEAT = BLOCKS.register("trough_wheat", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.TROUGH_WHEAT));
 //	public static final RegistryObject<Block> UTENSIL_FORK = BLOCKS.register("utensil_fork", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.UTENSIL));

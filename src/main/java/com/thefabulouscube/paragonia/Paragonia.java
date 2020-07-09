@@ -61,7 +61,6 @@ public class Paragonia {
 		BlockInit.FURNITURE.register(modEventBus);
 		EntityInit.ENTITY_TYPES.register(modEventBus);
 
-//		BeeEntity 
 
 		instance = this;
 		// Register ourselves for server and other game events we are interested in
@@ -72,14 +71,14 @@ public class Paragonia {
 	public static void onRegisteringItems(final RegistryEvent.Register<Item> event) {
 		final IForgeRegistry<Item> registry = event.getRegistry();
 
-		BlockInit.BLOCKS.getEntries().parallelStream().map(RegistryObject::get).forEach(block -> {
+		BlockInit.BLOCKS.getEntries().stream().map(RegistryObject::get).forEach(block -> {
 			final Item.Properties properties = new Item.Properties().group(CreativeTabs.DECORATIONS);
 			final BlockItem blockItem = new BlockItem(block, properties);
 			blockItem.setRegistryName(block.getRegistryName());
 			registry.register(blockItem);
 		});
 
-		BlockInit.FOOD.getEntries().parallelStream().filter(block -> (block.get() instanceof FoodBlock))
+		BlockInit.FOOD.getEntries().stream().filter(block -> (block.get() instanceof FoodBlock))
 				.map(RegistryObject::get).forEach(block -> {
 					final Item.Properties properties = new Item.Properties().group(ItemGroup.FOOD)
 							.food(((FoodBlock) block).getFood());
@@ -88,7 +87,7 @@ public class Paragonia {
 					registry.register(blockItem);
 				});
 
-		BlockInit.FURNITURE.getEntries().parallelStream().map(RegistryObject::get).forEach(block -> {
+		BlockInit.FURNITURE.getEntries().stream().map(RegistryObject::get).forEach(block -> {
 			final Item.Properties properties = new Item.Properties().group(CreativeTabs.FURNITURE);
 			final BlockItem blockItem = new BlockItem(block, properties);
 			blockItem.setRegistryName(block.getRegistryName());
@@ -144,10 +143,22 @@ public class Paragonia {
 		RenderTypeLookup.setRenderLayer(BlockInit.STATION_PORTABLE_ENCHANTING.get(), RenderType.getCutout());
 		RenderTypeLookup.setRenderLayer(BlockInit.STATION_PORTABLE_SMITHING.get(), RenderType.getCutout());
 		RenderTypeLookup.setRenderLayer(BlockInit.STATION_PROVISIONING.get(), RenderType.getCutout());
-//    	RenderTypeLookup.setRenderLayer(BlockInit.BANNER_SIMPLE_PURPLE.get(), RenderType.getCutout());
-//    	RenderTypeLookup.setRenderLayer(BlockInit.BANNER_SIMPLE_RED.get(), RenderType.getCutout());
-//    	RenderTypeLookup.setRenderLayer(BlockInit.BANNER_SIMPLE_WHITE.get(), RenderType.getCutout());
-//    	RenderTypeLookup.setRenderLayer(BlockInit.BANNER_SIMPLE_YELLOW.get(), RenderType.getCutout());
+    	RenderTypeLookup.setRenderLayer(BlockInit.BANNER_SIMPLE_BLACK.get(), RenderType.getCutout());
+    	RenderTypeLookup.setRenderLayer(BlockInit.BANNER_SIMPLE_BLUE.get(), RenderType.getCutout());
+    	RenderTypeLookup.setRenderLayer(BlockInit.BANNER_SIMPLE_BROWN.get(), RenderType.getCutout());
+    	RenderTypeLookup.setRenderLayer(BlockInit.BANNER_SIMPLE_CYAN.get(), RenderType.getCutout());
+    	RenderTypeLookup.setRenderLayer(BlockInit.BANNER_SIMPLE_GREEN.get(), RenderType.getCutout());
+    	RenderTypeLookup.setRenderLayer(BlockInit.BANNER_SIMPLE_GREY.get(), RenderType.getCutout());
+    	RenderTypeLookup.setRenderLayer(BlockInit.BANNER_SIMPLE_LIGHTBLUE.get(), RenderType.getCutout());
+    	RenderTypeLookup.setRenderLayer(BlockInit.BANNER_SIMPLE_LIGHTGREY.get(), RenderType.getCutout());
+    	RenderTypeLookup.setRenderLayer(BlockInit.BANNER_SIMPLE_LIME.get(), RenderType.getCutout());
+    	RenderTypeLookup.setRenderLayer(BlockInit.BANNER_SIMPLE_MAGENTA.get(), RenderType.getCutout());
+    	RenderTypeLookup.setRenderLayer(BlockInit.BANNER_SIMPLE_ORANGE.get(), RenderType.getCutout());
+    	RenderTypeLookup.setRenderLayer(BlockInit.BANNER_SIMPLE_PINK.get(), RenderType.getCutout());
+    	RenderTypeLookup.setRenderLayer(BlockInit.BANNER_SIMPLE_PURPLE.get(), RenderType.getCutout());
+    	RenderTypeLookup.setRenderLayer(BlockInit.BANNER_SIMPLE_RED.get(), RenderType.getCutout());
+    	RenderTypeLookup.setRenderLayer(BlockInit.BANNER_SIMPLE_WHITE.get(), RenderType.getCutout());
+    	RenderTypeLookup.setRenderLayer(BlockInit.BANNER_SIMPLE_YELLOW.get(), RenderType.getCutout());
 		RenderTypeLookup.setRenderLayer(BlockInit.BOOKREST.get(), RenderType.getCutout());
 		RenderTypeLookup.setRenderLayer(BlockInit.SCALE.get(), RenderType.getTranslucent());
 	}

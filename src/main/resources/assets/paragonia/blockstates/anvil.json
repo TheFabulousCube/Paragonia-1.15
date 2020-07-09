@@ -61,7 +61,6 @@
         "facing=ese,level=up": { "model": "paragonia:block/anvil_67","y":90,"x":90 },
         "facing=ssw,level=up": { "model": "paragonia:block/anvil_67","y":180,"x":90 },
         "facing=wnw,level=up": { "model": "paragonia:block/anvil_67", "y":270,"x":90 }
-	},
-	"inventory": { "model": "paragonia:block/anvil" }
+	}
 }
 
