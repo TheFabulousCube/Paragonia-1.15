@@ -6,6 +6,18 @@
 	"item.paragonia.ghost_spawn_egg": "Ghost Spawn Egg",
 	"item.paragonia.wood_sprite_spawn_egg": "Wood Sprite Spawn Egg",
 	"item.paragonia.wyvern_spawn_egg": "Wyvern Spawn Egg",
+	
+	"item.paragonia.apple": "Apple",
+	"item.paragonia.beet": "Beet",
+	"item.paragonia.bread_1": "Bread",
+	"item.paragonia.meat_drumstick": "Drumstick",
+	"item.paragonia.meat_ham": "Ham",
+	"item.paragonia.meat_hunk": "Hunk O' Meat",
+	"item.paragonia.orange": "Orange",
+	"item.paragonia.pie": "Pie",
+	"item.paragonia.potato": "Potato",
+	"item.paragonia.pumpkin_large": "Large Pumpkin",
+	"item.paragonia.pumpkin_small": "Small Pumpkin",
 
 	"block.paragonia.block_plain": "Plain Block",
 	"block.paragonia.block_dirty": "Dirty Block",

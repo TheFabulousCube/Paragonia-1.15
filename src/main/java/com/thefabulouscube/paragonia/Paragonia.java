@@ -9,6 +9,7 @@ import com.thefabulouscube.paragonia.init.BlockInit;
 import com.thefabulouscube.paragonia.init.EntityInit;
 import com.thefabulouscube.paragonia.init.ItemInit;
 import com.thefabulouscube.paragonia.objects.blocks.FoodBlock;
+import com.thefabulouscube.paragonia.objects.items.FoodBlockItem;
 import com.thefabulouscube.paragonia.util.CreativeTabs;
 
 import net.minecraft.block.Block;
@@ -80,9 +81,10 @@ public class Paragonia {
 
 		BlockInit.FOOD.getEntries().stream().filter(block -> (block.get() instanceof FoodBlock))
 				.map(RegistryObject::get).forEach(block -> {
-					final Item.Properties properties = new Item.Properties().group(ItemGroup.FOOD)
+					final Item.Properties properties = new Item.Properties()
+							.group(ItemGroup.FOOD)
 							.food(((FoodBlock) block).getFood());
-					final BlockItem blockItem = new BlockItem(block, properties);
+					final FoodBlockItem blockItem = new FoodBlockItem(properties).returns(((FoodBlock) block).getReturnedItem());
 					blockItem.setRegistryName(block.getRegistryName());
 					registry.register(blockItem);
 				});

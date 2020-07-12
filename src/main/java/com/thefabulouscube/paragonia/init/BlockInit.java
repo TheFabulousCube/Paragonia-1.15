@@ -38,10 +38,10 @@ public class BlockInit {
 	public static final RegistryObject<Block> MEAT_HAM = FOOD.register("meat_ham", () -> new FoodBlock(Block.Properties.create(Material.GOURD), ParagoniaFoods.MEAT_HAM, AABB.MEAT_HAM));
 	public static final RegistryObject<Block> MEAT_HUNK = FOOD.register("meat_hunk", () -> new FoodBlock(Block.Properties.create(Material.GOURD), ParagoniaFoods.MEAT_HUNK, AABB.MEAT_HUNK));
 	public static final RegistryObject<Block> ORANGE = FOOD.register("orange", () -> new FoodBlock(Block.Properties.create(Material.GOURD), ParagoniaFoods.ORANGE, AABB.ORANGE));
-	public static final RegistryObject<Block> PIE = FOOD.register("pie", () -> new FoodBlock(Block.Properties.create(Material.GOURD), ParagoniaFoods.PIE, AABB.PIE));
+	public static final RegistryObject<Block> PIE = FOOD.register("pie", () -> new FoodBlock(Block.Properties.create(Material.GOURD), ParagoniaFoods.PIE, AABB.PIE).returns(BlockInit.PIE_DISH.get()));
 	public static final RegistryObject<Block> POTATO = FOOD.register("potato", () -> new FoodBlock(Block.Properties.create(Material.GOURD), ParagoniaFoods.POTATO, AABB.POTATO));
-//	public static final RegistryObject<Block> PUMPKIN_LARGE = BLOCKS.register("pumpkin_large", () -> new OrthoBlock(Block.Properties.create(Material.GOURD), AABB.PUMPKIN_LARGE));
-//	public static final RegistryObject<Block> PUMPKIN_SMALL = BLOCKS.register("pumpkin_small", () -> new OrthoBlock(Block.Properties.create(Material.GOURD), AABB.PUMPKIN_SMALL));
+	public static final RegistryObject<Block> PUMPKIN_LARGE = BLOCKS.register("pumpkin_large", () -> new OrthoBlock(Block.Properties.create(Material.GOURD), AABB.PUMPKIN_LARGE));
+	public static final RegistryObject<Block> PUMPKIN_SMALL = BLOCKS.register("pumpkin_small", () -> new OrthoBlock(Block.Properties.create(Material.GOURD), AABB.PUMPKIN_SMALL));
  
 	// Reviewed
 	// Model file already has rotation, this is not suitable for Rotational
@@ -123,7 +123,7 @@ public class BlockInit {
 //	public static final RegistryObject<Block> DUMMY_SITTING = BLOCKS.register("dummy_sitting", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.DUMMY_SITTING));
 //	public static final RegistryObject<Block> DUMMY_TARGET = BLOCKS.register("dummy_target", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.DUMMY_TARGET));
 //	public static final RegistryObject<Block> FABRIC_STACK = BLOCKS.register("fabric_stack", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.FABRIC_STACK));
-//	public static final RegistryObject<Block> FIREPIT = BLOCKS.register("firepit", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.FIREPIT));
+	public static final RegistryObject<Block> FIREPIT = BLOCKS.register("firepit", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.FIREPIT));
 //	public static final RegistryObject<Block> FISHING_POLE = BLOCKS.register("fishing_pole", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.FISHING_POLE));
 //	public static final RegistryObject<Block> FISHING_RACK = BLOCKS.register("fishing_rack", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.FISHING_RACK));
 //	public static final RegistryObject<Block> FISHING_SPEAR = BLOCKS.register("fishing_spear", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.FISHING_SPEAR));
@@ -158,7 +158,7 @@ public class BlockInit {
 //	public static final RegistryObject<Block> PLATE_SMALL = BLOCKS.register("plate_small", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.PLATE_SMALL));
 //	public static final RegistryObject<Block> PODIUM_STONE = BLOCKS.register("podium_stone", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.PODIUM_STONE));
 //	public static final RegistryObject<Block> POT = BLOCKS.register("pot", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.POT));
-//	public static final RegistryObject<Block> QUILL = BLOCKS.register("quill", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.QUILL));
+	public static final RegistryObject<Block> QUILL = BLOCKS.register("quill", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.QUILL));
 	public static final RegistryObject<Block> SACK = BLOCKS.register("sack", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.SACK));
 //	public static final RegistryObject<Block> SCALE = BLOCKS.register("scale", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.SCALE));
 //	public static final RegistryObject<Block> SCROLL = BLOCKS.register("scroll", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.SCROLL));
