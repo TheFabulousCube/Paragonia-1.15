@@ -40,8 +40,6 @@ public class BlockInit {
 	public static final RegistryObject<Block> ORANGE = FOOD.register("orange", () -> new FoodBlock(Block.Properties.create(Material.GOURD), ParagoniaFoods.ORANGE, AABB.ORANGE));
 	public static final RegistryObject<Block> PIE = FOOD.register("pie", () -> new FoodBlock(Block.Properties.create(Material.GOURD), ParagoniaFoods.PIE, AABB.PIE).returns(BlockInit.PIE_DISH.get()));
 	public static final RegistryObject<Block> POTATO = FOOD.register("potato", () -> new FoodBlock(Block.Properties.create(Material.GOURD), ParagoniaFoods.POTATO, AABB.POTATO));
-	public static final RegistryObject<Block> PUMPKIN_LARGE = BLOCKS.register("pumpkin_large", () -> new OrthoBlock(Block.Properties.create(Material.GOURD), AABB.PUMPKIN_LARGE));
-	public static final RegistryObject<Block> PUMPKIN_SMALL = BLOCKS.register("pumpkin_small", () -> new OrthoBlock(Block.Properties.create(Material.GOURD), AABB.PUMPKIN_SMALL));
  
 	// Reviewed
 	// Model file already has rotation, this is not suitable for Rotational
@@ -50,6 +48,8 @@ public class BlockInit {
 	public static final RegistryObject<Block> CANDLE_CANDELABRA_IRON = BLOCKS.register("candle_candelabra_iron", () -> new OrthoBlock(Block.Properties.create(Material.IRON).lightValue(13), AABB.CANDLE_CANDELABRA));
 	public static final RegistryObject<Block> GEM_CALIPERS_1 = BLOCKS.register("gem_calipers_1", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.GEM_CALIPERS_1));
 	public static final RegistryObject<Block> GEM_CALIPERS_2 = BLOCKS.register("gem_calipers_2", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.GEM_CALIPERS_2));
+	public static final RegistryObject<Block> PUMPKIN_LARGE = BLOCKS.register("pumpkin_large", () -> new OrthoBlock(Block.Properties.create(Material.GOURD), AABB.PUMPKIN_LARGE));
+	public static final RegistryObject<Block> PUMPKIN_SMALL = BLOCKS.register("pumpkin_small", () -> new OrthoBlock(Block.Properties.create(Material.GOURD), AABB.PUMPKIN_SMALL));
 	
 	// Okay for Rotational
 	public static final RegistryObject<Block> BOTTLE_1 = BLOCKS.register("bottle_1", () -> new RotationalBlock(Block.Properties.create(Material.GLASS), AABB.BOTTLE_1));
@@ -67,6 +67,9 @@ public class BlockInit {
 	public static final RegistryObject<Block> CANDLES_RITUAL = BLOCKS.register("candles_ritual", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.CANDLES_RITUAL));
 	public static final RegistryObject<Block> CANDLE_CHAMBERSTICK = BLOCKS.register("candle_chamberstick", () -> new RotationalBlock(Block.Properties.create(Material.WOOD), AABB.CANDLE_CHAMBERSTICK));
 	public static final RegistryObject<Block> GONG = BLOCKS.register("gong", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.GONG));
+	
+	// Containers
+	public static final RegistryObject<Block> SACK = BLOCKS.register("sack", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.SACK));
 	
 
 	// GENERATED
@@ -159,7 +162,6 @@ public class BlockInit {
 //	public static final RegistryObject<Block> PODIUM_STONE = BLOCKS.register("podium_stone", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.PODIUM_STONE));
 //	public static final RegistryObject<Block> POT = BLOCKS.register("pot", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.POT));
 	public static final RegistryObject<Block> QUILL = BLOCKS.register("quill", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.QUILL));
-	public static final RegistryObject<Block> SACK = BLOCKS.register("sack", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.SACK));
 //	public static final RegistryObject<Block> SCALE = BLOCKS.register("scale", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.SCALE));
 //	public static final RegistryObject<Block> SCROLL = BLOCKS.register("scroll", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.SCROLL));
 //	public static final RegistryObject<Block> SCYTHE = BLOCKS.register("scythe", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.SCYTHE));

@@ -6,8 +6,10 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.thefabulouscube.paragonia.init.BlockInit;
+import com.thefabulouscube.paragonia.init.ContainerInit;
 import com.thefabulouscube.paragonia.init.EntityInit;
 import com.thefabulouscube.paragonia.init.ItemInit;
+import com.thefabulouscube.paragonia.init.TileEntityInit;
 import com.thefabulouscube.paragonia.objects.blocks.FoodBlock;
 import com.thefabulouscube.paragonia.objects.items.FoodBlockItem;
 import com.thefabulouscube.paragonia.util.CreativeTabs;
@@ -60,6 +62,8 @@ public class Paragonia {
 		ItemInit.ITEMS.register(modEventBus);
 		BlockInit.FOOD.register(modEventBus);
 		BlockInit.FURNITURE.register(modEventBus);
+		TileEntityInit.TILE_ENTITY_TYPES.register(modEventBus);
+		ContainerInit.CONTAINER_TYPES.register(modEventBus);
 		EntityInit.ENTITY_TYPES.register(modEventBus);
 
 
