@@ -2,6 +2,7 @@ package com.thefabulouscube.paragonia.tileentity;
 
 import javax.annotation.Nonnull;
 
+import com.thefabulouscube.paragonia.Paragonia;
 import com.thefabulouscube.paragonia.container.ExampleChestContainer;
 import com.thefabulouscube.paragonia.init.TileEntityInit;
 import com.thefabulouscube.paragonia.objects.blocks.ExampleChestBlock;
@@ -21,6 +22,7 @@ import net.minecraft.util.Direction;
 import net.minecraft.util.NonNullList;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.SoundEvent;
+import net.minecraft.util.SoundEvents;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
@@ -93,10 +95,11 @@ public class ExampleChestTileEntity extends LockableLootTileEntity {
 		}
 	}
 	
-	private void playSound(SoundEvent sound) {
+	public void playSound(SoundEvent sound) {
 		double dx = (double)this.pos.getX() + 0.5D;
 		double dy = (double)this.pos.getY() + 0.5D;
 		double dz = (double)this.pos.getZ() + 0.5D;
+		Paragonia.LOGGER.info("Playing sound: " + sound);
 		this.world.playSound((PlayerEntity) null, dx, dy, dz, sound, SoundCategory.BLOCKS, 0.5f,
 				this.world.rand.nextFloat() * 0.1f + 0.9f);
 	}
@@ -117,9 +120,9 @@ public class ExampleChestTileEntity extends LockableLootTileEntity {
 			if (this.numPlayersUsing < 0) {
 				this.numPlayersUsing = 0;
 			}
-
 			++this.numPlayersUsing;
 			this.onOpenOrClose();
+			Paragonia.LOGGER.info("Trigger for 'Open Inventory'.");
 		}
 	}
 
@@ -128,6 +131,7 @@ public class ExampleChestTileEntity extends LockableLootTileEntity {
 		if (!player.isSpectator()) {
 			--this.numPlayersUsing;
 			this.onOpenOrClose();
+			Paragonia.LOGGER.info("Trigger for 'Close Inventory'.");
 		}
 	}
 
@@ -136,6 +140,7 @@ public class ExampleChestTileEntity extends LockableLootTileEntity {
 		if (block instanceof ExampleChestBlock) {
 			this.world.addBlockEvent(this.pos, block, 1, this.numPlayersUsing);
 			this.world.notifyNeighborsOfStateChange(this.pos, block);
+			Paragonia.LOGGER.info("Trigger for onOpenOrClose().");
 		}
 	}
 

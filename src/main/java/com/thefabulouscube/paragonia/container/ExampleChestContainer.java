@@ -38,6 +38,7 @@ public class ExampleChestContainer extends Container {
 		int slotSizePlus2 = 18;
 		int slotSize = 16;
 		int horizDivider = 14;
+		int hotBarDivider = 4;
 		
 		for (int row = 0; row < numRows; row++) {
 			for (int column = 0; column < numColumns; column++) {
@@ -55,7 +56,7 @@ public class ExampleChestContainer extends Container {
 		}
 
 		// Hotbar (I'm not convinced tha the math is correct for hotbarY
-		int hotbarY = startPlayerInvY + (startPlayerInvY / 2) + 7;
+		int hotbarY = startPlayerInvY + (3 * slotSizePlus2) + hotBarDivider;
 		for (int column = 0; column < 9; ++column) {
 			this.addSlot(new Slot(playerInventory, column, startX + (column * slotSizePlus2), hotbarY));
 		}

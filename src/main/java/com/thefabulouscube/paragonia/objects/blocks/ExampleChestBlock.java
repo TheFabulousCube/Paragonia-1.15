@@ -1,7 +1,9 @@
 package com.thefabulouscube.paragonia.objects.blocks;
 
+import com.thefabulouscube.paragonia.Paragonia;
 import com.thefabulouscube.paragonia.init.TileEntityInit;
 import com.thefabulouscube.paragonia.tileentity.ExampleChestTileEntity;
+import com.thefabulouscube.paragonia.util.AABB;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -11,16 +13,17 @@ import net.minecraft.inventory.InventoryHelper;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ActionResultType;
 import net.minecraft.util.Hand;
+import net.minecraft.util.SoundEvents;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.network.NetworkHooks;
 
-public class ExampleChestBlock extends Block {
+public class ExampleChestBlock extends OrthoBlock {
 
-	public ExampleChestBlock(Properties properties) {
-		super(properties);
+	public ExampleChestBlock(Properties properties, AABB voxelShapesIn) {
+		super(properties, voxelShapesIn);
 	}
 
 
@@ -41,10 +44,12 @@ public class ExampleChestBlock extends Block {
 			TileEntity tile = worldIn.getTileEntity(pos);
 			if (tile instanceof ExampleChestTileEntity) {
 				NetworkHooks.openGui((ServerPlayerEntity) player, (ExampleChestTileEntity) tile, pos);
+
+				((ExampleChestTileEntity) tile).playSound(SoundEvents.BLOCK_GRASS_STEP); //SoundEvents.ITEM_ARMOR_EQUIP_LEATHER
 				return ActionResultType.SUCCESS;
 			}
 		}
-		return ActionResultType.FAIL;
+		return ActionResultType.SUCCESS;
 	}
 
 	@Override

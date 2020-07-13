@@ -1,6 +1,7 @@
 package com.thefabulouscube.paragonia.init;
 
 import com.thefabulouscube.paragonia.Paragonia;
+import com.thefabulouscube.paragonia.objects.blocks.ExampleChestBlock;
 import com.thefabulouscube.paragonia.objects.blocks.FoodBlock;
 import com.thefabulouscube.paragonia.objects.blocks.OrthoBlock;
 import com.thefabulouscube.paragonia.objects.blocks.RotationalBlock;
@@ -69,7 +70,7 @@ public class BlockInit {
 	public static final RegistryObject<Block> GONG = BLOCKS.register("gong", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.GONG));
 	
 	// Containers
-	public static final RegistryObject<Block> SACK = BLOCKS.register("sack", () -> new OrthoBlock(Block.Properties.create(Material.WOOD), AABB.SACK));
+	public static final RegistryObject<Block> SACK = BLOCKS.register("sack", () -> new ExampleChestBlock(Block.Properties.create(Material.WOOD), AABB.SACK));
 	
 
 	// GENERATED
